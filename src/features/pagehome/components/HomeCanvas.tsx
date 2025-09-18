@@ -5,6 +5,7 @@ import { EffectComposer, Bloom } from "@react-three/postprocessing"
 import { Figure } from "./Figure";
 import { Particles } from "./Particles";
 import { useEffect, useRef } from "react";
+import { mediaQuery } from "../../../shared/utils/mediaQuery";
 
 interface Props {
     fullscreen?: boolean;
@@ -27,6 +28,8 @@ export const HomeCanvas = ({ fullscreen, figure }: Props) => {
             resetCamera();
     }, [fullscreen]);
 
+    const isMobile = mediaQuery("(max-width: 640px)");
+
     return (
         <Canvas>
             <ambientLight intensity={0.15} />
@@ -40,7 +43,7 @@ export const HomeCanvas = ({ fullscreen, figure }: Props) => {
                 <Bloom intensity={10} luminanceThreshold={0.0} luminanceSmoothing={1}/>
             </EffectComposer>
             <Figure figure={figure}/>
-            <Particles/>
+            { !isMobile && <Particles/> }
 
             <OrbitControls ref={orbitRef} autoRotate={!fullscreen} enableDamping={true} enableZoom={fullscreen} enablePan={fullscreen}/>
         </Canvas>
