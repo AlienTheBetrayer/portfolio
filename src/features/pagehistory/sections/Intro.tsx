@@ -1,8 +1,13 @@
+import { HistoryMenu } from '../components/HistoryMenu'
 import './Intro.css'
 
 import { motion } from 'motion/react'
 
-export const Intro = () => {
+interface Props {
+    sections: { id: string, ref: React.RefObject<HTMLElement | null>, title: string }[]
+}
+
+export const Intro = ({ sections }: Props) => {
     return (
         <motion.section
         initial={{ opacity: 0 }}
@@ -18,6 +23,7 @@ export const Intro = () => {
                 By sharing this progression, I aim to give a transparent view of not just the technologies I've learned, but the principles and mindset that guide my work. 
                 It reflects a commitment to growth, adaptability, and creating solutions that balance technical precision with user-focused design.
             </p>
+            <HistoryMenu sections={sections}/>
         </motion.section>
     )
 }

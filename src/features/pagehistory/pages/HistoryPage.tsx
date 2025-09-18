@@ -5,7 +5,6 @@ import { Spotlight } from '../../../shared/components/aceternity/spotlight'
 
 import { useEffect, useRef } from 'react'
 import { useSectionObserver } from '../../../shared/hooks/useSectionObserver'
-import { HistoryMenu } from '../components/HistoryMenu'
 import { scrollToRef } from '../../../shared/utils/scrollToRef'
 import { Scrollbar } from '../components/Scrollbar'
 import { TheBeginning } from '../sections/TheBeginning'
@@ -88,8 +87,7 @@ export const HistoryPage = () => {
             <Scrollbar/>
 
             {/* sections */}
-            <Intro/>
-            <HistoryMenu sections={sections}/>
+            <Intro sections={sections}/>
 
             <hr/>
             { sections.map(section => (

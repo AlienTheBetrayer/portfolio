@@ -3,12 +3,11 @@
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     min-height: 300px;
-    gap: 1rem;
+    gap: 1.25rem;
 
     border-radius: 30px;
-    border: 2px dashed var(--background4);
     background: linear-gradient(312deg, var(--background), var(--background2));
 
     backdrop-filter: blur(10px);
