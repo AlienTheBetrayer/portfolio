@@ -7,8 +7,6 @@
     border-radius: 30px;
     background: linear-gradient(-192deg, var(--background), var(--background3));
     backdrop-filter: blur(2px);
-    box-shadow: 0 0 20px var(--header3);
-    border: 2px dashed var(--background3);
     padding: 2rem;
 }
 
