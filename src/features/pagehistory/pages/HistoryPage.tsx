@@ -1,7 +1,7 @@
 import './HistoryPage.css'
 import { Page } from "../../layout/components/Page"
-// import { SpotlightContainer } from '../../pagehome/pages/HomePage'
-// import { Spotlight } from '../../../shared/components/aceternity/spotlight'
+import { SpotlightContainer } from '../../pagehome/pages/HomePage'
+import { Spotlight } from '../../../shared/components/aceternity/spotlight'
 
 import { useEffect, useRef } from 'react'
 import { useSectionObserver } from '../../../shared/hooks/useSectionObserver'
@@ -71,7 +71,7 @@ export const HistoryPage = () => {
     return (
         <Page className='history-page' properties={{ scrollProgress: false, meteors: false }}>
             {/* spotlight effects / processing */}
-            {/* {loaded && (
+            {loaded && (
                 <SpotlightContainer>
                     <Spotlight className="-top-25 lg:top-0 -left-5 lg:left-0 h-full select-none"  fill="hsla(234, 31%, 37%, 1.00)"/>
                     <Spotlight className="-top-0 left-40 lg:left-0 h-400 w-250 -rotate-80 lg:rotate-90 select-none"  fill="hsla(247, 13%, 50%, 1.00)"/>
@@ -84,7 +84,7 @@ export const HistoryPage = () => {
                     <Spotlight className="top-3300 lg:top-1700 h-300 lg:h-250 w-400 -left-200 lg:left-90 rotate-90 select-none"  fill="hsla(221, 30%, 43%, 1.00)"/>
                     <Spotlight className="top-3700 lg:top-2250 left-0 h-300 lg:h-250 w-400 rotate-0 select-none"  fill="hsla(221, 28%, 66%, 1.00)"/>
                 </SpotlightContainer>
-            )} */}
+            )}
             <Scrollbar/>
 
             {/* sections */}
