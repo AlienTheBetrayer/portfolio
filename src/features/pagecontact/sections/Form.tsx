@@ -1,3 +1,4 @@
+import './Form.css';
 import { RevealingContainer } from "../../../shared/components/RevealingContainer"
 import { ContactForm } from "../components/ContactForm"
 

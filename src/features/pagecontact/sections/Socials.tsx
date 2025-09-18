@@ -1,3 +1,4 @@
+import './Socials.css';
 import { RevealingContainer } from "../../../shared/components/RevealingContainer";
 import { UniversalLink } from "../../../shared/components/UniversalLink";
 import { socialLinks } from "../../../shared/data/socialLinks";

@@ -9,7 +9,7 @@
     padding: var(--padding);
 
     border-radius: 30px;
-    background: linear-gradient(-192deg, var(--contactinput), var(--background3));
+    background: linear-gradient(192deg, var(--contactinput), var(--background3));
     backdrop-filter: blur(2px);
     box-shadow: 0 0 20px var(--header3);
     border: 2px dashed var(--background4);
@@ -19,6 +19,10 @@
     .contact-form {
         min-height: 600px;
     }
+}
+
+.contact-form-submit {
+    cursor: pointer;
 }
 
 .contact-form>form {

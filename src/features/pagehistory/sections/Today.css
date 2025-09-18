@@ -1,0 +1,11 @@
+.today-goback {
+    width: 100%;
+    max-width: 256px;
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .today-goback {
+        max-width: 90%;
+    }
+}
