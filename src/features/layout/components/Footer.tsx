@@ -38,7 +38,7 @@ export const Footer = () => {
                         </div>  
 
                         <div>
-                            <h4>something</h4>
+                            <h4>placeholder</h4>
                             <UniversalLink type='router' to='/contact'>Home</UniversalLink>
                             <UniversalLink type='router' to='/contact'>History</UniversalLink>
                             <UniversalLink type='router' to='/contact'>Skillset</UniversalLink>

@@ -8,26 +8,32 @@ export const SliderSection = () => {
     const elements = [
         {
             image: sliderImages.sliders1,
+            alt: 'slider 1',
             link: 'https://github.com/AlienTheBetrayer/slider-showcase'
         },
         {
             image: sliderImages.cardAdder,
+            alt: 'card adder',
             link: 'https://github.com/AlienTheBetrayer/card-adder'
         },
         {
             image: sliderImages.sliders2,
+            alt: 'slider 2',
             link: 'https://github.com/AlienTheBetrayer/slider-showcase'
         },
         {
             image: sliderImages.gemini,
+            alt: 'gemini recreation',
             link: 'https://github.com/AlienTheBetrayer/gemini-frontend-recreation'
         },
         {
             image: sliderImages.twitch,
+            alt: 'twitch recreation',
             link: 'https://github.com/AlienTheBetrayer/twitch-frontend-recreation'
         },
         {
             image: sliderImages.sliders3,
+            alt: 'slider 3',
             link: 'https://github.com/AlienTheBetrayer/slider-showcase'
         }
     ];
@@ -44,7 +50,7 @@ export const SliderSection = () => {
                 <Slider className='home-slider' tooltip='This slider is fully custom-built from scratch.' autoRepeatDelay={5000}>
                     { elements.map(elem => (
                         <div key={elem.image} className='home-slider-element'>
-                            <img className='slider-image' src={elem.image} draggable={false}/>
+                            <img className='slider-image' src={elem.image} alt={elem.alt} draggable={false}/>
 
                             <div className='slider-link'>
                                 <UniversalLink to={elem.link}>

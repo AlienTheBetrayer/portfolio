@@ -10,7 +10,7 @@ export const CursorEffect = () => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
 
-    const options: SpringOptions = { stiffness: 100, damping: 20, duration: 0.1 };
+    const options: SpringOptions = { stiffness: 400, damping: 40 };
     const springX = useSpring(x, options);
     const springY = useSpring(y, options);
 
