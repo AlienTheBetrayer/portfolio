@@ -13,7 +13,7 @@ import { Watcher } from './shared/redux/Watcher';
 createRoot(document.getElementById('root')!).render(
 <StrictMode>
     <Provider store={store}>
-        <PersistGate loading={<div><h1>ITS LOADING BITCHESSSSSS</h1></div>} persistor={persistor}>
+        <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
             <Watcher/>
             <RouterProvider router={router}/>
         </PersistGate>
