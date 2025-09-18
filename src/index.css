@@ -52,6 +52,7 @@
     --footer: rgba(4, 4, 4, 0.409);
     --contactinput: hsl(240, 12%, 8%);
     --torus: #6a6a8f;
+    --particles: hsla(0, 0%, 64%, 1.00);
     --logo: #72728e;
     --history-scrollbar-1: rgb(74, 74, 161);
     --history-scrollbar-2: rgb(155, 195, 241);
@@ -86,7 +87,9 @@
     --card: hsl(250, 20%, 88%);         
     --footer: rgba(246, 248, 255, 0.8); 
     --contactinput: hsl(0, 0%, 95%);  
-    --torus: #37374f;
+    --torus: #141417;
+    --particles: rgba(22, 22, 22, 0.587);
+
     --logo: #393952;
     --history-scrollbar-1: hsl(237, 67%, 56%);
     --history-scrollbar-2: hsl(0, 81%, 63%);

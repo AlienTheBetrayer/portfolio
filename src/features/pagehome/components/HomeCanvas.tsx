@@ -5,6 +5,8 @@ import { EffectComposer, Bloom } from "@react-three/postprocessing"
 import { Figure } from "./Figure";
 import { Particles } from "./Particles";
 import { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
+import type { StoreType } from "../../../shared/redux/store";
 
 interface Props {
     fullscreen?: boolean;
@@ -13,6 +15,7 @@ interface Props {
 
 export const HomeCanvas = ({ fullscreen, figure }: Props) => {
     const orbitRef = useRef<OrbitControlsImpl>(null);
+    const theme = useSelector((state: StoreType) => state.theme.value);
 
     const resetCamera = () => {
         const controls = orbitRef.current;
@@ -36,9 +39,11 @@ export const HomeCanvas = ({ fullscreen, figure }: Props) => {
             <pointLight position={[0, 2, 0]} color='hsla(100, 80%, 50%, 1.00)' intensity={1} distance={300}/>
             <spotLight position={[6, 0, 0]} penumbra={1} angle={Math.PI / 4} intensity={20} color='#00ffee'/>
 
-            <EffectComposer>
-                <Bloom intensity={10} luminanceThreshold={0.0} luminanceSmoothing={1}/>
-            </EffectComposer>
+            { theme == 'dark' && (
+                <EffectComposer>
+                    <Bloom intensity={10} luminanceThreshold={0.0} luminanceSmoothing={1}/>
+                </EffectComposer>
+            )}
             <Figure figure={figure}/>
             <Particles/>
 

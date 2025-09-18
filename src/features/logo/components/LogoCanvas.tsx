@@ -3,8 +3,6 @@ import { LogoMesh } from "./LogoMesh"
 import { OrbitControls } from "@react-three/drei"
 
 export const LogoCanvas = () => {
-    
-
     return (
         <Canvas>
             <ambientLight intensity={0.5} />

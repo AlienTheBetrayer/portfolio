@@ -1,6 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 import { Points, PointsMaterial } from "three";
+import { cssVar } from "../../../shared/utils/cssVar";
 
 
 export const Particles = () => {
@@ -30,7 +31,7 @@ export const Particles = () => {
                     attach="attributes-position"
                     itemSize={3} args={[particles, 3]}/>
                 </bufferGeometry>
-            <pointsMaterial size={0.03} transparent color='hsla(0, 0%, 64%, 1.00)' />
+            <pointsMaterial size={0.03} transparent color={cssVar('--particles')} />
         </points>
     )
 }
