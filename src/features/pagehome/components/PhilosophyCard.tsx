@@ -39,13 +39,13 @@ export const PhilosophyCard = ({ title, description, popupDescription }: Props) 
 
     return (
         <motion.article ref={ cardRef } className='philosophy-card' 
-        animate={ isCentered ? { scale: 1.05, borderColor: cssVar('--background7') } : { scale: 1.00, borderColor: cssVar('--background5') } }>    
+        animate={ isCentered ? { scale: 1.05, borderColor: cssVar('--background7') } : { scale: 1.00, borderColor: cssVar('--background3') } }>    
             <div className='philosophy-card-topbar'>
                 <Button onClick={() => popup.setShown(true)}>⛶</Button>
             </div>
             
-            <motion.p animate={ isCentered ? { color: cssVar('--background7') } : { color: cssVar('--background5') } }>{ description }</motion.p>
-            <motion.h3 animate={ isCentered ? { color: cssVar('--foreground') } : { color: cssVar('--background6') } }> { title } </motion.h3>
+            <motion.p animate={ isCentered ? { color: cssVar('--background7') } : { color: cssVar('--background4') } }>{ description }</motion.p>
+            <motion.h3 animate={ isCentered ? { color: cssVar('--foreground') } : { color: cssVar('--background5') } }> { title } </motion.h3>
         
             { popup.render() }
         </motion.article>

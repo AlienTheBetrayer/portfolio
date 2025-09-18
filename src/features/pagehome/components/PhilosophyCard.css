@@ -10,7 +10,7 @@
     backdrop-filter: blur(0px);
     padding: var(--padding);
     border: 2px dashed var(--background4);
-    box-shadow: 0 0 10px var(--header3);
+    box-shadow: 0 0 10px var(--header2);
 
     transition: 0.3s;
 }
