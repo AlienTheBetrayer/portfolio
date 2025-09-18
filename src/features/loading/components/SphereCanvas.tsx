@@ -1,25 +1,18 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from '@react-three/drei';
 import { Sphere } from "./Sphere";
-import { mediaQuery } from "../../../shared/utils/mediaQuery";
-
 export const SphereCanvas = () => {
-    const isMobile = mediaQuery("(max-width: 640px)");
     
     return (
         <Canvas>
-            {!isMobile && (
-                <>
-                    <ambientLight intensity={0.15} />
-                    <directionalLight position={[2, 2, 2]} />
-                    <pointLight position={[-2.5, 1, 0.5]} color='hsla(0, 80%, 50%, 1.00)' intensity={20} distance={300}/>
-                    <pointLight position={[2.5, -1, -0.5]} color='hsla(240, 80%, 50%, 1.00)' intensity={20} distance={300}/>
+            <ambientLight intensity={0.15} />
+            <directionalLight position={[2, 2, 2]} />
+            <pointLight position={[-2.5, 1, 0.5]} color='hsla(0, 80%, 50%, 1.00)' intensity={20} distance={300}/>
+            <pointLight position={[2.5, -1, -0.5]} color='hsla(240, 80%, 50%, 1.00)' intensity={20} distance={300}/>
 
-                    <OrbitControls enableRotate={true} enablePan={false} enableZoom={false}/>
+            <OrbitControls enableRotate={true} enablePan={false} enableZoom={false}/>
 
-                    <Sphere/>
-                </>
-            )}
+            <Sphere/>
         </Canvas>
     )
 }
