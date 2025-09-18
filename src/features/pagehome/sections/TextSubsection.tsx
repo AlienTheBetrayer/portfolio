@@ -6,7 +6,7 @@ import { LinkButton } from "../../../shared/components/LinkButton";
 import { logoImages } from "../assets/logos/import";
 
 export const TextSubsection = ({ loaded }: { loaded: boolean }) => {
-    const technologies = ['React', 'Typescript', 'Tailwind', 'Redux', 'HTML', 'CSS', 'Javascript'];
+    const technologies = ['React', 'Typescript', 'Tailwind', 'Redux', 'Zustand', 'HTML', 'CSS', 'Javascript'];
 
     return (
         <motion.section
