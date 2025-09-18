@@ -14,6 +14,7 @@ import { Settings } from '../../settings/components/Settings';
 import { CursorEffect } from '../../cursoreffect/components/CursorEffect';
 import { useSelector } from 'react-redux';
 import type { StoreType } from '../../../shared/redux/store';
+import { mediaQuery } from '../../../shared/utils/mediaQuery';
 
 interface PageProperties {
     header?: boolean;
@@ -40,6 +41,7 @@ interface Props {
 
 export const Page = ({ className = '', children, properties }: Props) => {
     const loaded = useSelector((state: StoreType) => state.loaded.value);
+    const isMobile = mediaQuery('(max-width:640px)');
 
     return (
         <main className={`page ${className}`}>
@@ -48,7 +50,7 @@ export const Page = ({ className = '', children, properties }: Props) => {
             {/* effects & processing */}
             { (properties?.loading ?? true) && <Loading/> } 
             { (properties?.noiseOverlay ?? true) && <NoiseOverlay delay={ loaded ? 0 : 5 }/> }
-            { (properties?.meteors ?? true) && <Meteors/> }
+            { ((properties?.meteors ?? true) && !isMobile) && <Meteors/> }
             { (properties?.cursorEffect ?? true) && <CursorEffect/> }
 
             {/* fixed positioned elements */}

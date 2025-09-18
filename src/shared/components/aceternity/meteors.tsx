@@ -1,5 +1,4 @@
 "use client";
-import { mediaQuery } from '../../utils/mediaQuery';
 import { cn } from './lib'
 import { motion } from "motion/react";
 
@@ -11,7 +10,6 @@ export const Meteors = ({
   className?: string;
 }) => {
   const meteors = new Array(number || 20).fill(true);
-  const isMobile = mediaQuery('(max-width:640px)');
 
   return (
     <motion.div
@@ -20,7 +18,7 @@ export const Meteors = ({
       transition={{ duration: 0.5 }}
     >
       {meteors.map((_el, idx) => {
-        const meteorCount = isMobile ? 5 : 20;
+        const meteorCount = 20;
         // Calculate position to evenly distribute meteors across container width
         const position = idx * (800 / meteorCount) - 400; // Spread across 800px range, centered
 
