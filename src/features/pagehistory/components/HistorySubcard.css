@@ -1,0 +1,27 @@
+.history-subcard {
+    display: flex;
+    flex-direction: column-reverse;
+    transition: 0.3s;
+}
+
+.subcard-positioning-left {
+    grid-column: 1;
+}
+
+.subcard-positioning-right {
+    grid-column: 3;
+}
+
+@media (max-width: 1024px) {
+    .history-subcard {
+        grid-column: 3;
+    }
+}
+
+.history-subcard h3 {
+    color: var(--background6);
+}
+
+.history-subcard p {
+    color: var(--background5);
+}

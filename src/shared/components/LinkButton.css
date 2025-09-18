@@ -1,0 +1,13 @@
+.link-button {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+
+.link-button:hover {
+    background-color: var(--background3);
+}
+
+.link-button:active {
+    background-color: var(--background);
+}

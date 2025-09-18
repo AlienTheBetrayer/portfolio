@@ -1,0 +1,16 @@
+.logo {
+    position: fixed;
+    left: 2rem;
+    top: calc(2rem + 42px);
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    z-index: 999;
+}
+
+@media (max-width: 640px) {
+    .logo {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

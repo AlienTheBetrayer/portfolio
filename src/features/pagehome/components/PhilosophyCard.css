@@ -1,0 +1,74 @@
+/* main */
+.philosophy-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 300px;
+
+    border-radius: 30px;
+    background-color: var(--card);
+    backdrop-filter: blur(0px);
+    padding: var(--padding);
+    border: 2px dashed var(--background4);
+    box-shadow: 0 0 10px var(--header3);
+
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .philosophy-card {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/* individual styling */
+.philosophy-card>p {
+    color: var(--background5);
+}
+
+/* topbar */
+.philosophy-card-topbar {
+    width: 100%;
+    min-height: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.philosophy-card-topbar button {
+    min-width: 32px;
+    min-height: 32px;
+}
+
+/* popup */
+.philosophy-card-popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    min-height: 300px;
+    width: 380px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--card);
+    backdrop-filter: blur(0px);
+    padding: var(--padding);
+    border: 2px dashed var(--background5);
+    box-shadow: 0 0 20px var(--card);
+    z-index: 1001;
+    border-radius: 30px;
+}
+
+.philosophy-card-popup>.philosophy-card-topbar {
+    justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+    .philosophy-card-popup {
+        min-height: 400px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,7 @@
+.universal-link {
+    color: var(--background4);
+}
+
+.universal-link:hover {
+    color: var(--background6);
+}

@@ -1,0 +1,18 @@
+.settings {
+    position: fixed;
+    right: 2rem;
+    top: calc(2rem + 40px);
+    transform: translateY(-50%);
+    min-width: 32px;
+    min-height: 32px;
+    color: var(--background6);
+    background-color: transparent;
+    font-size: 1.75rem;
+    z-index: 999;
+}
+
+@media (max-width: 640px ){
+    .settings {
+        display: none;
+    }
+}

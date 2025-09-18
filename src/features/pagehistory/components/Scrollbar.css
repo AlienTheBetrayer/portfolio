@@ -1,0 +1,11 @@
+.history-scrollbar {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--history-scrollbar-1), var(--history-scrollbar-2));
+    backdrop-filter: blur(1px);
+    left: 0.5rem;
+    transform-origin: top;
+    border-radius: 30px;
+}

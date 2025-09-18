@@ -1,0 +1,11 @@
+.scrollbar {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.144);
+    mix-blend-mode: overlay;
+    backdrop-filter: invert(30%) saturate(100%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 12px;
+    transform-origin: 0% 50%;
+}

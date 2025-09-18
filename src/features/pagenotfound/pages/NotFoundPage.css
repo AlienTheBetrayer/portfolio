@@ -1,0 +1,23 @@
+.notfound-page {
+}
+
+.notfound-mainsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notfound-mainsection > * {
+    text-align: center;
+}
+
+.notfound-gobackbutton {
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 640px) {
+    .notfound-gobackbutton {
+        width: 100%;
+    }
+}

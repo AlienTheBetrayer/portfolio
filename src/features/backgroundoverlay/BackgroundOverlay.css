@@ -1,0 +1,7 @@
+.background-overlay {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.525);
+    z-index: 1000;
+}

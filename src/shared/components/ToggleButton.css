@@ -1,0 +1,30 @@
+.toggle-button {
+    display: flex;
+    align-items: center;
+    min-height: 3em;
+    min-width: 6em;
+    padding: 0 8px;
+    gap: 0.5rem;
+
+    background-color: var(--contactinput);
+    border-radius: 100px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.toggle-button-circle {
+    display: flex;
+    min-width: 4em;
+}
+
+.toggle-button-circle > div {
+    border-radius: 100px;
+    background-color: var(--background3);
+    min-height: 2em;
+    min-width: 2em;
+}
+
+.toggle-button-text {
+    color: var(--background5);
+    font-size: 1em;
+}

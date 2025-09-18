@@ -1,0 +1,27 @@
+.history-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    min-height: 300px;
+    gap: 1rem;
+
+    border-radius: 30px;
+    border: 2px dashed var(--background4);
+    background: linear-gradient(312deg, var(--background), var(--background2));
+
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .history-menu {
+        width: 100%;
+    }
+}
+
+.history-menu button {
+    width: 100%;
+    text-align: left;
+}

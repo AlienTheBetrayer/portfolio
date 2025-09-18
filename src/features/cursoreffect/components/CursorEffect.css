@@ -1,0 +1,10 @@
+.cursor-effect {
+    position: fixed;
+    width: 128px;
+    height: 128px;
+    z-index: 998;
+    pointer-events: none;
+    border-radius: 100%;
+    background-color: var(--cursoreffect);
+    filter: blur(80px);
+}

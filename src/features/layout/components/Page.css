@@ -1,0 +1,9 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    background: linear-gradient(-120deg, var(--page), var(--page-gradient));
+}

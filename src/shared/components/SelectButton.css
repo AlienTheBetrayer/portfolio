@@ -1,0 +1,30 @@
+.select-button-container {
+    display: flex;
+}
+
+.select-button-container button {
+    position: relative;
+    padding: 4px;
+    margin: 0;
+    border: transparent;
+    color: var(--background7);
+
+    font-size: 1.25rem;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.select-button-container button:hover {
+    background-color: var(--background3);
+}
+
+.select-button-underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to left, var(--background6), var(--background5));
+    width: 100%;
+    height: 2px;
+}

@@ -1,0 +1,14 @@
+.scroll-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+}
+
+.scroll-top>button {
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    background: linear-gradient(to left, var(--header), var(--header2));
+    background-color: transparent;
+    color: var(--background7);
+}

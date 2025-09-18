@@ -1,0 +1,9 @@
+.aceternity-container-text > span {
+    font-size: var(--font-xl);
+}
+
+@media (max-width: 640px) {
+    .aceternity-container-text > span {
+        font-size: var(--font-l);
+    }
+}

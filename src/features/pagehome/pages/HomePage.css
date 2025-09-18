@@ -1,0 +1,11 @@
+/* spotlights */
+.spotlight-container {
+    user-select: none;
+    pointer-events: none;
+}
+
+.spotlight-radial {
+    background: radial-gradient(circle, rgba(60, 62, 180, 0.468) 0%, rgba(60, 62, 180, 0.116) 50%, rgba(60, 62, 180, 0.034) 75%, transparent 100%);
+    filter: blur(200px);
+    z-index: 10;
+}

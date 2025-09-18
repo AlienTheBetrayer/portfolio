@@ -1,0 +1,20 @@
+.button {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 0 8px;
+
+    background-color: var(--contactinput);
+    
+    border-radius: 16px;
+    border: transparent;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--background3);
+}
+
+.button:active {
+    background-color: var(--background);
+}
