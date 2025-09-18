@@ -69,7 +69,7 @@ export const HistoryPage = () => {
     }, []);
 
     return (
-        <Page className='history-page' properties={{ scrollProgress: false, meteors: false }}>
+        <Page className='history-page' properties={{ scrollProgress: false }}>
             {/* spotlight effects / processing */}
             {loaded && (
                 <SpotlightContainer>
