@@ -2,7 +2,7 @@ import { useMotionValue, useSpring, useTransform, type SpringOptions } from 'mot
 import './CursorEffect.css';
 
 import { motion } from 'motion/react';
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 
 export const CursorEffect = () => {
     const cursorEffectRef = useRef<HTMLDivElement | null>(null);
