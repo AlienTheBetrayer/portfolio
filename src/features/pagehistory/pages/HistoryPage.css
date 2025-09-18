@@ -3,19 +3,6 @@
     flex-direction: column;
 }
 
-/* default style for both regular cards and subcards */
-.history-page-card {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border-radius: 30px;
-    background-color: var(--card);
-    backdrop-filter: blur(0px);
-    padding: var(--padding);
-    border: 2px dashed var(--background3);
-    box-shadow: 0 0 10px var(--header3);
-}
-
 /* every section (for aligning gaps) */
 .history-page section {
     display: flex;

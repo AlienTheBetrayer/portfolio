@@ -1,8 +1,6 @@
-/* main */
-.philosophy-card {
+.card {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     min-height: 300px;
 
     border-radius: 30px;
@@ -16,19 +14,19 @@
 }
 
 @media (max-width: 768px) {
-    .philosophy-card {
+    .card {
         width: 95%;
         margin: 0 auto;
     }
 }
 
 /* individual styling */
-.philosophy-card>p {
+.card>p {
     color: var(--background5);
 }
 
 /* topbar */
-.philosophy-card-topbar {
+.card-topbar {
     width: 100%;
     min-height: 32px;
     display: flex;
@@ -37,7 +35,16 @@
     flex-grow: 1;
 }
 
-.philosophy-card-topbar button {
+.card-topbar button {
     min-width: 32px;
     min-height: 32px;
+    color: var(--background5);
+}
+
+.card-activated p {
+    color: var(--background7);
+}
+
+.card-activated h3 {
+    color: var(--foreground);
 }
