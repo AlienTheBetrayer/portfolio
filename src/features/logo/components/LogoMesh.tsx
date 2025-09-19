@@ -24,7 +24,7 @@ export const LogoMesh = () => {
         <mesh ref={logoRef}>
             <sphereGeometry args={[ 2.5 ]}/>
             <meshStandardMaterial color={cssVar('--logo')} wireframe/>
-            <Edges scale={1.1} threshold={10}/>
+            <Edges scale={1.15} threshold={10}/>
         </mesh>
     )
 }
