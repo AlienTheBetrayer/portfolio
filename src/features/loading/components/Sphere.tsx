@@ -2,6 +2,8 @@ import { useFrame } from "@react-three/fiber";
 import { useRef } from 'react';
 import { Mesh, SphereGeometry } from 'three'; 
 import { mediaQuery } from "../../../shared/utils/mediaQuery";
+import { Edges } from "@react-three/drei";
+import { cssVar } from "../../../shared/utils/cssVar";
  
 export const Sphere = () => {
     const sphereRef = useRef<Mesh>(null);
@@ -25,6 +27,7 @@ export const Sphere = () => {
         <mesh rotation={[0.5, 0.5, 0]} ref={sphereRef}>
             <sphereGeometry args={[1.5, 32, 32]} ref={geometryRef}/>
             <meshStandardMaterial color="hsla(240, 15%, 55%, 1.00)" wireframe/>
+            <Edges scale={1.4} threshold={5} color={cssVar('--torus')} transparent opacity={0.25}/>
         </mesh>
     )
 }

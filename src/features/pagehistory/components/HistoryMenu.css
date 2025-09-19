@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 700px;
     min-height: 300px;
-    gap: 1.25rem;
+    gap: 1rem;
 
     border-radius: 30px;
     background: linear-gradient(312deg, var(--background), var(--background2));
@@ -23,4 +23,9 @@
 .history-menu button {
     width: 100%;
     text-align: left;
+    padding: 0 1rem;
+}
+
+.history-menu button::before {
+    content: '• ';
 }
