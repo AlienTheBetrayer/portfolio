@@ -31,4 +31,5 @@
     font-size: 0.8rem;
     color: hsl(240, 23%, 75%);
     mix-blend-mode: difference;
+    cursor: default;
 }

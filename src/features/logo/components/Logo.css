@@ -5,7 +5,7 @@
     transform: translateY(-50%);
     width: 42px;
     height: 42px;
-    z-index: 999;
+    z-index: 1000;
 }
 
 @media (max-width: 640px) {

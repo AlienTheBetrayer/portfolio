@@ -41,14 +41,19 @@
     border-radius: 30px;
 }
 
-.contact-form input[type='text']:focus,
-.contact-form textarea:focus {
-    outline: 1px solid var(--background6);
-}
+
 
 .contact-form textarea {
     resize: none;
     flex-grow: 1;
+}
+
+.contact-form textarea:invalid, .contact-form input[type='text']:invalid {
+    outline: 1px solid rgb(203, 104, 104);
+}
+
+.contact-form textarea:valid, .contact-form input[type='text']:valid {
+    outline: 1px solid var(--background5);
 }
 
 .contact-form input[type='submit']:hover {

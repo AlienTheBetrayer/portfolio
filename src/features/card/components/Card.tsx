@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import './Card.css';
 import { useInView } from 'motion/react';
-import { useCardGradient } from '../../../shared/hooks/useCardGradient';
+import { useCardGradient } from '../hooks/useCardGradient';
 import { cssVar } from '../../../shared/utils/cssVar';
 
 import { motion } from 'motion/react';

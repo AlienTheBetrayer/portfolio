@@ -12,9 +12,9 @@ export const ContactForm = () => {
             <h3>Collaboration form</h3>
 
             <form action="mailto:your@email.com" method="post" encType="text/plain">
-                <input className='contact-form-input' placeholder='Name' type="text" name="name"/>
-                <input className='contact-form-input' placeholder='Email' type="text" name="email"/>
-                <textarea className='contact-form-textarea' placeholder='Message' name="content"/>
+                <input className='contact-form-input' placeholder='Name' required type="text" name="name"/>
+                <input className='contact-form-input' placeholder='Email' required type="text" name="email"/>
+                <textarea placeholder='Message' required name="content"/>
                 
                 <input className='contact-form-submit' type="submit" value="Send"/>
             </form>
