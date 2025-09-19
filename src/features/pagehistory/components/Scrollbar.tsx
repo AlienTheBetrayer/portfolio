@@ -8,7 +8,6 @@ export const Scrollbar = () => {
     const scale = useSpring(scroll.motionValue.scrollYProgress, {
         stiffness: 30,
         damping: 20,
-        restDelta: 0.001
     });
 
     return (

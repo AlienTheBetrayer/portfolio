@@ -6,8 +6,7 @@ export const ScrollProgress = () => {
     const scroll = useScrollProgress();
     const scaleX = useSpring(scroll.motionValue.scrollYProgress, {
         stiffness: 100,
-        damping: 20,
-        restDelta: 0.001
+        damping: 40,
     });
 
     return (
