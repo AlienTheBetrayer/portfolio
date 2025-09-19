@@ -55,9 +55,9 @@ export const Footer = () => {
                     </p>
 
                     <div className='footer-bottom-terms'>
-                        <UniversalLink type='link'>Terms</UniversalLink>
-                        <UniversalLink type='link'>Privacy</UniversalLink>
-                        <UniversalLink type='link'>Compliances</UniversalLink>
+                        <UniversalLink type='link' to={socialLinks.linkedin}>Terms</UniversalLink>
+                        <UniversalLink type='link' to={socialLinks.linkedin}>Privacy</UniversalLink>
+                        <UniversalLink type='link' to={socialLinks.linkedin}>Compliances</UniversalLink>
                     </div>
                 </div>
             </div>
