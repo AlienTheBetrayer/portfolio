@@ -23,9 +23,5 @@
 .history-menu button {
     width: 100%;
     text-align: left;
-    padding: 0 1rem;
-}
-
-.history-menu button::before {
-    content: '• ';
+    padding: 0 1.25rem;
 }
