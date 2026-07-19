@@ -1,0 +1,17 @@
+@layer utilities {
+  	.ripple {
+		overflow: hidden;
+		isolation: isolate;
+		--ripple-color: var(--secondary);
+		--ripple-speed: 0.4s;
+	}
+
+	.ripple-element {
+		position: absolute;
+		border-radius: 50%;
+		background-color: var(--ripple-color);
+		pointer-events: none;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+	}
+}
