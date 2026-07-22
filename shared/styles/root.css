@@ -1,3 +1,10 @@
 :root {
 	--radius: 0.625rem;
+	--dotted: color-mix(in oklch, var(--foreground) var(--dotted-percent), transparent);
+}
+
+* {
+	box-sizing: border-box;
+  scrollbar-width: thin;
+  font-family: Inter, sans-serif;
 }

@@ -1,3 +1,4 @@
+import { AvailableThemes } from "@/features/themes/lib/themes";
 import { ThemeProvider } from "next-themes";
 
 export const ThemesProvider = ({ children }: { children: React.ReactNode }) => {
@@ -7,7 +8,7 @@ export const ThemesProvider = ({ children }: { children: React.ReactNode }) => {
 			defaultTheme="system"
 			enableSystem
 			disableTransitionOnChange
-			themes={["dark", "light"]}
+			themes={[...AvailableThemes]}
 		>
 			{children}
 		</ThemeProvider>

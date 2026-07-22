@@ -1,5 +1,5 @@
 @layer utilities {
-  	.ripple {
+	.ripple {
 		overflow: hidden;
 		isolation: isolate;
 		--ripple-color: var(--secondary);

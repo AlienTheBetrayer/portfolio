@@ -4,8 +4,9 @@ import "../shared/styles/globals.css";
 import { cn } from "@/features/shadcn/lib/utils";
 import { ThemesProvider } from "@/features/themes/providers/ThemeProvider";
 import { TooltipProvider } from "@/features/shadcn/ui/tooltip";
+import { Header } from "@/features/header/ui/Header";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -20,12 +21,15 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={cn("h-full antialiased", "font-sans", inter.variable)}
+			className={cn("min-h-screen antialiased", "font-sans", inter.variable)}
 			suppressHydrationWarning
 		>
-			<body className="min-h-full flex flex-col">
+			<body className="min-h-full flex flex-col dotted">
 				<TooltipProvider>
-					<ThemesProvider>{children}</ThemesProvider>
+					<ThemesProvider>
+						<Header />
+						{children}
+					</ThemesProvider>
 				</TooltipProvider>
 			</body>
 		</html>
