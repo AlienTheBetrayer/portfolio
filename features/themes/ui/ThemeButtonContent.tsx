@@ -8,7 +8,7 @@ import {
 	ComboboxLabel,
 	ComboboxList,
 	ComboboxSeparator,
-} from "@/features/shadcn";
+} from "@/shared/shadcn";
 import { getThemeIcon } from "@/features/themes/lib/getThemeIcon";
 import { AvailableTheme, AvailableThemesList } from "@/features/themes/lib/themes";
 

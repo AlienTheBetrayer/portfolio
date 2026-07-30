@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../shared/styles/globals.css";
-import { cn } from "@/features/shadcn/lib/utils";
+import { cn } from "@/shared/shadcn/lib/utils";
 import { ThemesProvider } from "@/features/themes/providers/ThemeProvider";
-import { TooltipProvider } from "@/features/shadcn/ui/tooltip";
+import { TooltipProvider } from "@/shared/shadcn/ui/tooltip";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
 			<body className="flex flex-col grow w-full">
 				<TooltipProvider>
 					<ThemesProvider>
-						<main className="flex grow w-full **:w-full">{children}</main>
+						<main className="flex grow w-full">{children}</main>
 					</ThemesProvider>
 				</TooltipProvider>
 			</body>

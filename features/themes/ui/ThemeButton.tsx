@@ -1,6 +1,6 @@
 "use client";
 
-import { Combobox, ComboboxTrigger } from "@/features/shadcn";
+import { Combobox, ComboboxTrigger } from "@/shared/shadcn";
 import { AvailableTheme, AvailableThemesList } from "@/features/themes/lib/themes";
 import { ThemeButtonContent } from "@/features/themes/ui/ThemeButtonContent";
 import { Moon } from "lucide-react";

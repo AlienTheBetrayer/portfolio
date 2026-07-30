@@ -1,5 +1,5 @@
 import { HeaderItems } from "@/features/header/lib/items";
-import { Button } from "@/features/shadcn";
+import { Button } from "@/shared/shadcn";
 import { ThemeButton } from "@/features/themes/ui/ThemeButton";
 import Link from "next/link";
 
