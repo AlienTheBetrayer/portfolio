@@ -1,31 +1,49 @@
-import { HeaderItems } from "@/features/header/lib/items";
-import { Button } from "@/shared/shadcn";
+"use client";
+
+import { useHeader } from "@/features/header/hooks/useHeader";
 import { ThemeButton } from "@/features/themes/ui/ThemeButton";
-import Link from "next/link";
+import { Button } from "@/shared/shadcn";
+import { Boxes } from "lucide-react";
+import { useRef } from "react";
 
 export const Header = () => {
+	const headerRef = useRef<HTMLDivElement | null>(null);
+	useHeader(headerRef);
+
 	// jsx
 	return (
-		<header className="flex items-center px-4 sticky top-0 left-0 right-0 w-screen mx-auto h-16  backdrop-blur-md">
-			<div className="flex items-center justify-between w-full max-w-400 mx-auto">
-				<ul className="flex items-center justify-center">
-					{HeaderItems.map((item) => (
-						<li key={item}>
-							<Button
-								variant="ghost"
-								className="px-2.5"
-								render={
-									<Link href={`/#${item.toLowerCase().replace(" ", "-")}`}>
-										<span>{item}</span>
-									</Link>
-								}
-								nativeButton={false}
-							/>
-						</li>
-					))}
+		<header
+			className="flex items-center justify-center px-4 fixed left-0 right-0 -top-24 w-screen z-2"
+			ref={headerRef}
+		>
+			<nav className="bg-background/99 backdrop-blur-sm w-full h-12 rounded-2xl max-w-104">
+				<ul className="flex items-center w-full h-full px-4">
+					<li>
+						<Button
+							className="aspect-square"
+							variant="ghost"
+						>
+							<Boxes />
+						</Button>
+					</li>
+
+					<li>
+						<Button variant="ghost">
+							<span className="text-xs">Section 1</span>
+						</Button>
+					</li>
+
+					<li>
+						<Button variant="ghost">
+							<span className="text-xs">Section 1</span>
+						</Button>
+					</li>
+
+					<li className="ml-auto">
+						<ThemeButton />
+					</li>
 				</ul>
-				<ThemeButton />
-			</div>
+			</nav>
 		</header>
 	);
 };

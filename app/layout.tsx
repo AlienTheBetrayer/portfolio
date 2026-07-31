@@ -4,6 +4,7 @@ import "../shared/styles/globals.css";
 import { cn } from "@/shared/shadcn/lib/utils";
 import { ThemesProvider } from "@/features/themes/providers/ThemeProvider";
 import { TooltipProvider } from "@/shared/shadcn/ui/tooltip";
+import { Header } from "@/features/header/ui/Header";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -26,6 +27,8 @@ export default function RootLayout({
 			<body className="flex flex-col grow w-full">
 				<TooltipProvider>
 					<ThemesProvider>
+						<Header />
+
 						<main className="flex grow w-full">{children}</main>
 					</ThemesProvider>
 				</TooltipProvider>

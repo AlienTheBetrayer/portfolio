@@ -14,8 +14,8 @@ export const HeroCanvas = () => {
 
 	// jsx
 	return (
-    <Canvas
-      dpr={[1, 2]}
+		<Canvas
+			dpr={[1, 2]}
 			style={{ width: "100%", height: "100%", opacity: visible ? 1 : 0, transition: "opacity 0.3s ease" }}
 			onCreated={() => {
 				setVisible(true);
@@ -33,7 +33,6 @@ export const HeroCanvas = () => {
 				intensity={6}
 				color="#dfe6f2"
 			/>
-
 			<ambientLight
 				intensity={0.06}
 				color="#8fa3c2"
@@ -41,6 +40,7 @@ export const HeroCanvas = () => {
 
 			<OrbitControls
 				enablePan={false}
+				enableZoom={false}
 			/>
 
 			<color
