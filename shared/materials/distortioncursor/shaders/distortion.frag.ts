@@ -39,11 +39,11 @@ void mainImage(
     float influence = smoothstep(radius, horizon, dist);
     influence = pow(influence, 2.7);
 
-float wave1 = sin(uTime * 6.0 + dist * 70.0);
-float wave2 = cos(uTime * 9.0 - dist * 45.0);
-float wave3 = sin(uTime * 13.0 + dist * 120.0);
+    float wave1 = sin(uTime * 6.0 + dist * 70.0);
+    float wave2 = cos(uTime * 9.0 - dist * 45.0);
+    float wave3 = sin(uTime * 13.0 + dist * 120.0);
 
-float wobble = (wave1 + wave2 + wave3) * 0.33;
+    float wobble = (wave1 + wave2 + wave3) * 0.33;
 
     float radial =
         (0.045 / (dist * dist + 0.02))
