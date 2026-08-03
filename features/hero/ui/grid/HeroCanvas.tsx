@@ -2,10 +2,11 @@
 
 import { HeroCamera } from "@/features/hero/ui/grid/HeroCamera";
 import { HeroGrid } from "@/features/hero/ui/grid/HeroGrid";
+import { DistortionCursor } from "@/shared/materials/distortioncursor/ui/DistortionCursorEffect";
 import { GlassText } from "@/shared/three/ui/GlassText";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { EffectComposer, TiltShift2 } from "@react-three/postprocessing";
+import { EffectComposer } from "@react-three/postprocessing";
 import { useState } from "react";
 
 export const HeroCanvas = () => {
@@ -30,7 +31,7 @@ export const HeroCanvas = () => {
 
 			<directionalLight
 				position={[-3, 4, -8]}
-				intensity={6}
+				intensity={8}
 				color="#dfe6f2"
 			/>
 			<ambientLight
@@ -52,10 +53,10 @@ export const HeroCanvas = () => {
 				args={["#0a0a0a", 5, 15]}
 			/>
 			<HeroGrid />
-			<GlassText text="0 TO SHIPPED" />
+			<GlassText text="FULLSTACK" />
 
 			<EffectComposer>
-				<TiltShift2 blur={0.125} />
+				<DistortionCursor strength={0.075} />
 			</EffectComposer>
 		</Canvas>
 	);
