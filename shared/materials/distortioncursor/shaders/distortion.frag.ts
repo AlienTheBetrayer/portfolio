@@ -39,11 +39,21 @@ void mainImage(
     float influence = smoothstep(radius, horizon, dist);
     influence = pow(influence, 2.7);
 
+    // --- layered oscillators for an organic, chaotic swirl ---
     float wave1 = sin(uTime * 6.0 + dist * 70.0);
     float wave2 = cos(uTime * 9.0 - dist * 45.0);
     float wave3 = sin(uTime * 13.0 + dist * 120.0);
 
     float wobble = (wave1 + wave2 + wave3) * 0.33;
+
+    // slow, big swings in overall swirl strength and direction
+    float slowSurge = sin(uTime * 0.7) * 0.5 + sin(uTime * 0.31 + 1.7) * 0.5;
+
+    // medium, faster churn layered on top
+    float churn = sin(uTime * 2.3 + dist * 20.0) * cos(uTime * 1.6 - dist * 14.0);
+
+    // occasional sharper flicks
+    float flicker = sin(uTime * 17.0 + dist * 200.0) * 0.15;
 
     float radial =
         (0.045 / (dist * dist + 0.02))
@@ -51,7 +61,12 @@ void mainImage(
         * uStrength;
 
     float swirl =
-        (0.16 + wobble * 0.015)
+        (0.16
+            + wobble * 0.02
+            + slowSurge * 0.06
+            + churn * 0.05
+            + flicker * 0.02
+        )
         * influence
         * uStrength;
 

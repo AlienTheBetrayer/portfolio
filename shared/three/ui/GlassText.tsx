@@ -49,25 +49,24 @@ function _GlassText({ height = 0.3, text, ...props }: GlassTextProps) {
 						height={height}
 						bevelSize={0.01}
 						bevelSegments={3}
-						curveSegments={64}
+						curveSegments={2}
 						bevelThickness={0.01}
 					>
 						{text}
 						<MeshTransmissionMaterial
-              backside={true}
-              backsideThickness={0.13}
-              anisotropicBlur={0.1}
-              transmission={1}
-              roughness={0.4}
-              dispersion={0.1}
-              distortionScale={0.09}
-              thickness={0.15}
-              ior={1.5}
-              chromaticAberration={0.1}
-              anisotropy={0.1}
-              fog={false}
-							//   background={texture}
-						/>
+							backside={true}
+							backsideThickness={0.13}
+							anisotropicBlur={0.1}
+							transmission={1}
+							roughness={0.4}
+							dispersion={0.1}
+							distortionScale={0.09}
+							thickness={0.15}
+							ior={1.5}
+							chromaticAberration={0.1}
+							anisotropy={0.1}
+							fog={false}
+            />
 					</Text3D>
 				</Center>
 				<group>
@@ -158,10 +157,10 @@ export const GlassText = ({ text }: { text: string }) => {
 			>
 				{text}
 			</_GlassText>
-			<Shadows
+			{/* <Shadows
 				key={text}
 				shadow={shadow}
-			/>
+			/> */}
 		</>
 	);
 };

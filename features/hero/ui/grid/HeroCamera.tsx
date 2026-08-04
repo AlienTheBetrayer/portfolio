@@ -3,7 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
-import { PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
 import { type PerspectiveCamera as PerspectiveCameraType } from "three";
 
@@ -47,12 +47,18 @@ export const HeroCamera = () => {
 
 	// jsx
 	return (
-		<PerspectiveCamera
-			position={[0, 20, 5]}
-			rotation={[0, 0, 0]}
-			ref={cameraRef}
-			makeDefault
-			fov={30}
-		/>
+		<>
+			<PerspectiveCamera
+				position={[0, 20, 5]}
+				rotation={[0, 0, 0]}
+				ref={cameraRef}
+				makeDefault
+				fov={30}
+			/>
+			<OrbitControls
+				enablePan={false}
+				enableZoom={false}
+			/>
+		</>
 	);
 };
