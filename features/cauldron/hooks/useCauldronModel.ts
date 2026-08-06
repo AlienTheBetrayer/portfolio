@@ -58,9 +58,7 @@ export const useCauldronModel = () => {
 				child.name.includes("BakedFluidsimData8") ||
 				child.name.includes("BakedFluidsimData9")
 			) {
-				console.warn("Found smoke mesh:", child.name);
-
-        child.material = smokeMaterial.current;
+				child.material = smokeMaterial.current;
 			}
 		});
 	}, [scene, smokeMaterial]);
