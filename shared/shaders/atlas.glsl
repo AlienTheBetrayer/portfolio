@@ -1,3 +1,9 @@
+// misc
+float getFrame(float time, float fps, float frameCount) {
+	float frame = mod(floor(time * fps), frameCount);
+  return frame;
+}
+
 // sample
 vec2 atlasUV(vec2 uv, float frame, float tilesX, float tilesY) {
 	float tileX = mod(frame, tilesX);
@@ -13,15 +19,14 @@ float sampleDensity(sampler2D atlas, vec2 uv, float tilesX, float tilesY, float 
 	return texture2D(atlas, atlasCoords).r;
 }
 
-float sampleDensityLoop(sampler2D atlas, vec2 uv, float tilesX, float tilesY, float frameCount, float time, float fps) {
-	float frame = mod(floor(time * fps), frameCount);
-  return sampleDensity(atlas, uv, tilesX, tilesY, frame);
+float sampleHeight(sampler2D atlas, vec2 uv, float frame) {
+	return sampleDensity(atlas, uv, frame, tilesX, tilesY);
 }
 
 // rendering
 vec4 renderDensity(float density) {
 	density = smoothstep(0.08, 0.85, density); // shape
-	density = pow(density, 1.4); // contrast
+	density = pow(density, 0.4); // contrast
 
 	vec3 smokeColor = vec3(0.82, 0.86, 0.92);
 

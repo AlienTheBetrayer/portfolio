@@ -9,12 +9,23 @@ uniform float tilesX;
 uniform float tilesY;
 uniform float frameCount;
 uniform float frame;
+uniform float heightScale;
+uniform float layers;
 uniform float fps;
 
-#include "atlas.glsl";
+#pragma include "geometry.glsl";
+#pragma include "parallax.glsl";
 
 void main() {
-  float density = sampleDensityLoop(densityMap, vUv, tilesX, tilesY, frameCount, time, fps);
+	// init
+	float frame = getFrame(time, fps, frameCount);
+	vec3 viewDir = getViewDir(vWorldPos);
+
+	// parallax + sampling
+	vec2 pomUV = applyPOM(densityMap, vUv, viewDir, heightScale, layers, frame, tilesX, tilesY);
+	float density = sampleDensity(densityMap, pomUV, tilesX, tilesY, frame);
+
+	// rendering / debugging
 	gl_FragColor = renderDensity(density);
 	// gl_FragColor = debugDensity(density);
 }

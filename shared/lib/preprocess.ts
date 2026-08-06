@@ -17,7 +17,7 @@ export function preprocessGLSL(sourceOrKey: string, visited = new Set<string>())
 		visited.add(sourceOrKey);
 	}
 
-	const includeRegex = /^\s*#include\s+["']([^"']+)["'];?/gm;
+	const includeRegex = /^\s*#pragma\s+include\s*\(?\s*["']?([^"'\)\s]+)["']?\s*\)?;?/gim;
 
 	return code.replace(includeRegex, (_, includePath: string) => {
 		if (includePath in shaderFiles) {

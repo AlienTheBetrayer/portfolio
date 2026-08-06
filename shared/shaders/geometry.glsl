@@ -1,3 +1,5 @@
-vec3 getViewDir(vec3 worldPos, vec3 cameraPos) {
-	return safeNormalize(cameraPos - worldPos);
+#pragma include "common.glsl";
+
+vec3 getViewDir(vec3 worldPos) {
+	return safeNormalize(cameraPosition - worldPos);
 }

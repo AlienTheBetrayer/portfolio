@@ -25,7 +25,8 @@ export const useCauldronModel = () => {
 			uniforms: {
 				time: { value: 0 },
 				frame: { value: 0 },
-
+				heightScale: { value: 0.03 },
+				layers: { value: 32 },
 				densityMap: { value: density },
 				tilesX: { value: 8 },
 				tilesY: { value: 4 },
@@ -35,26 +36,6 @@ export const useCauldronModel = () => {
 			},
 		});
 	}
-
-	useEffect(() => {
-		const handle = (e: KeyboardEvent) => {
-			switch (e.key) {
-				case "ArrowLeft": {
-					smokeMaterial.current!.uniforms.frame.value = (smokeMaterial.current!.uniforms.frame.value - 1 + 32) % 32;
-					break;
-				}
-				case "ArrowRight": {
-					smokeMaterial.current!.uniforms.frame.value = (smokeMaterial.current!.uniforms.frame.value + 1) % 32;
-					break;
-				}
-			}
-		};
-
-		window.addEventListener("keydown", handle);
-		return () => {
-			window.removeEventListener("keydown", handle);
-		};
-	}, []);
 
 	useFrame((state) => {
 		const time = state.clock.getElapsedTime();
@@ -79,7 +60,7 @@ export const useCauldronModel = () => {
 			) {
 				console.warn("Found smoke mesh:", child.name);
 
-				child.material = smokeMaterial.current;
+        child.material = smokeMaterial.current;
 			}
 		});
 	}, [scene, smokeMaterial]);
