@@ -16,7 +16,7 @@ export const Header = () => {
 			className="flex items-center justify-center px-4 fixed left-0 right-0 -top-24 w-screen z-2"
 			ref={headerRef}
 		>
-			<nav className="bg-background/80 backdrop-blur-4xl w-full h-12 rounded-2xl max-w-104">
+			<nav className="bg-background/10 backdrop-blur-xl w-full h-12 rounded-full max-w-104">
 				<ul className="flex items-center w-full h-full px-4">
 					<li>
 						<Button
