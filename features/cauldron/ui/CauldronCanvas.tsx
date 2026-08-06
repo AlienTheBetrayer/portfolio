@@ -1,7 +1,6 @@
 "use client";
 
 import { CauldronModel } from "@/features/cauldron/ui/CauldronModel";
-import "../lib/material";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
@@ -18,8 +17,8 @@ export const CauldronCanvas = () => {
 				intensity={128}
 				position={[0, -2, -3.5]}
 			/>
-      <CauldronModel />
-      
+			<CauldronModel />
+
 			{/* <EffectComposer>
 				<Bloom
 					intensity={1.2}

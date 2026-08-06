@@ -1,8 +1,7 @@
 "use client";
 
 import { useCauldronAssets } from "@/features/cauldron/hooks/useCauldronAssets";
-import { smokeFragmentShader } from "@/features/cauldron/shaders/smoke.fragment";
-import { smokeVertexShader } from "@/features/cauldron/shaders/smoke.vertex";
+import { smokeFragmentShader, smokeVertexShader } from "@/features/cauldron/shaders";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useMemo, useEffect, useRef } from "react";

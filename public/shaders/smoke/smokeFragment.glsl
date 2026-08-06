@@ -1,18 +1,17 @@
-export const smokeFragmentShader = `
+varying vec2 vUv;
+varying vec3 vWorldPos;
+varying vec3 vWorldNormal;
+varying vec3 vViewDir;
+
 uniform sampler2D densityMap;
-
 uniform float time;
-
 uniform float tilesX;
 uniform float tilesY;
 uniform float frameCount;
 uniform float frame;
 uniform float fps;
 
-varying vec2 vUv;
-
-void main()
-{
+float sampleDensity(vec2 uv) {
     // Current animation frame
     float frame = mod(floor(time * fps), frameCount);
 
@@ -26,6 +25,12 @@ void main()
     );
 
     float density = texture2D(densityMap, atlasUV).r;
+
+
+    return density;
+}
+
+vec4 renderDensity(float density) {
     density = smoothstep(0.08, 0.85, density); // shape
     density = pow(density, 1.4); // contrast
 
@@ -35,7 +40,17 @@ void main()
       0.92
     );
 
-    gl_FragColor = vec4(smokeColor * density, density);
-    
+    return vec4(smokeColor * density, density);
 }
-    `;
+
+vec4 debugDensity(float density) {
+  vec3 v = normalize(vViewDir);
+  return vec4(v * 0.5 + 0.5, 1.0);
+}
+
+void main()
+{
+  float density = sampleDensity(vUv);
+  gl_FragColor  = renderDensity(density);
+  gl_FragColor  = debugDensity(density);
+}
