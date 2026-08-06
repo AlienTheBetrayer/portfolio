@@ -25,7 +25,7 @@ export const useCauldronModel = () => {
 			uniforms: {
 				time: { value: 0 },
 				frame: { value: 0 },
-				heightScale: { value: 0.03 },
+				heightScale: { value: 0.05 },
 				layers: { value: 32 },
 				densityMap: { value: density },
 				tilesX: { value: 8 },

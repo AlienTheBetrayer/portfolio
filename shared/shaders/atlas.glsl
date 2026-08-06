@@ -1,7 +1,7 @@
 // misc
 float getFrame(float time, float fps, float frameCount) {
 	float frame = mod(floor(time * fps), frameCount);
-  return frame;
+	return frame;
 }
 
 // sample

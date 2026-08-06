@@ -2,6 +2,7 @@ varying vec2 vUv;
 varying vec3 vWorldPos;
 varying vec3 vWorldNormal;
 varying vec3 vViewDir;
+varying mat3 vTBN;
 
 uniform sampler2D densityMap;
 uniform float time;
