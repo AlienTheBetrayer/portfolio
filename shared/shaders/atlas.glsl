@@ -19,8 +19,8 @@ float sampleDensity(sampler2D atlas, vec2 uv, float tilesX, float tilesY, float 
 	return texture2D(atlas, atlasCoords).r;
 }
 
-float sampleHeight(sampler2D atlas, vec2 uv, float frame) {
-	return sampleDensity(atlas, uv, frame, tilesX, tilesY);
+float sampleHeight(sampler2D atlas, vec2 uv, float tilesX, float tilesY, float frame) {
+	return sampleDensity(atlas, uv, tilesX, tilesY, frame);
 }
 
 // rendering
