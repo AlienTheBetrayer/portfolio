@@ -1,39 +1,53 @@
-// misc
-float getFrame(float time, float fps, float frameCount) {
-	float frame = mod(floor(time * fps), frameCount);
-	return frame;
+vec2 getAtlasUV(
+	vec2 uv,
+	float frame,
+	vec2 gridSize,
+	vec2 texelSize
+) {
+	float frameX = mod(frame, gridSize.x);
+	float frameY = floor(frame / gridSize.x);
+
+	// Flip Y because the atlas rows are stored top -> bottom.
+	frameY = gridSize.y - 1.0 - frameY;
+
+	vec2 tileSize = 1.0 / gridSize;
+
+	// Half a physical texel.
+	vec2 padding = texelSize * 0.5;
+
+	// Keep sampling strictly inside this frame.
+	vec2 localUv = clamp(uv, 0.0, 1.0);
+
+	localUv = padding +
+		localUv * (tileSize - padding * 2.0);
+
+	return vec2(frameX, frameY) * tileSize + localUv;
 }
 
-// sample
-vec2 atlasUV(vec2 uv, float frame, float tilesX, float tilesY) {
-	float tileX = mod(frame, tilesX);
-	float tileY = tilesY - 1.0 - floor(frame / tilesX);
-	vec2 tileSize = vec2(1.0 / tilesX, 1.0 / tilesY);
 
-	return vec2(tileX, tileY) * tileSize + uv * tileSize;
+// ------------------------------------------------------------
+// Density atlas
+// ------------------------------------------------------------
+
+vec2 getDensityUV(vec2 uv, float frame) {
+	return getAtlasUV(
+		uv,
+		frame,
+		uGridSize,
+		uDensityTexelSize
+	);
 }
 
-float sampleDensity(sampler2D atlas, vec2 uv, float tilesX, float tilesY, float frame) {
-	vec2 atlasCoords = atlasUV(uv, frame, tilesX, tilesY);
 
-	return texture2D(atlas, atlasCoords).r;
-}
+// ------------------------------------------------------------
+// Velocity atlas
+// ------------------------------------------------------------
 
-float sampleHeight(sampler2D atlas, vec2 uv, float tilesX, float tilesY, float frame) {
-	return sampleDensity(atlas, uv, tilesX, tilesY, frame);
-}
-
-// rendering
-vec4 renderDensity(float density) {
-	density = smoothstep(0.08, 0.85, density); // shape
-	density = pow(density, 0.4); // contrast
-
-	vec3 smokeColor = vec3(0.82, 0.86, 0.92);
-
-	return vec4(smokeColor * density, density);
-}
-
-vec4 debugDensity(float density) {
-	vec3 v = normalize(vViewDir);
-	return vec4(v * 0.5 + 0.5, 1.0);
+vec2 getVelocityUV(vec2 uv, float frame) {
+	return getAtlasUV(
+		uv,
+		frame,
+		uGridSize,
+		uVelocityTexelSize
+	);
 }

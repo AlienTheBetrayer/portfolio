@@ -1,0 +1,5754 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.8.0"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 384,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 1,
+			"count": 81,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-1,
+				-1.00247085,
+				-1.67670606e-07
+			],
+			"max": [
+				1,
+				0.99752897,
+				1.58170749e-07
+			]
+		},
+		{
+			"bufferView": 2,
+			"count": 81,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 3,
+			"count": 81,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 81,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 81,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 6,
+			"count": 1536,
+			"type": "SCALAR",
+			"componentType": 5123
+		},
+		{
+			"bufferView": 7,
+			"count": 334,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-0.5,
+				-0.5,
+				-0.5
+			],
+			"max": [
+				0.5,
+				0.5,
+				0.5
+			]
+		},
+		{
+			"bufferView": 8,
+			"count": 334,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 9,
+			"count": 334,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 10,
+			"count": 334,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 11,
+			"count": 334,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 12,
+			"count": 144,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 13,
+			"count": 54,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-0.5,
+				-0.5,
+				-0.5
+			],
+			"max": [
+				0.5,
+				0.5,
+				0.5
+			]
+		},
+		{
+			"bufferView": 14,
+			"count": 54,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 15,
+			"count": 54,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 16,
+			"count": 54,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 17,
+			"count": 54,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 18,
+			"count": 2880,
+			"type": "SCALAR",
+			"componentType": 5123
+		},
+		{
+			"bufferView": 19,
+			"count": 559,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-0.5,
+				-0.5,
+				-0.49999994
+			],
+			"max": [
+				0.5,
+				0.5,
+				0.5
+			]
+		},
+		{
+			"bufferView": 20,
+			"count": 559,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 21,
+			"count": 559,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 22,
+			"count": 559,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 23,
+			"count": 559,
+			"type": "VEC2",
+			"componentType": 5126
+		}
+	],
+	"buffers": [
+		{
+			"uri": "fluids.bin",
+			"byteLength": 66928
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 384,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 972,
+			"byteOffset": 384,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 972,
+			"byteOffset": 1356,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1296,
+			"byteOffset": 2328,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 3624,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 4272,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 3072,
+			"byteOffset": 4920,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 4008,
+			"byteOffset": 7992,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 4008,
+			"byteOffset": 12000,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 5344,
+			"byteOffset": 16008,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 2672,
+			"byteOffset": 21352,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 2672,
+			"byteOffset": 24024,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 144,
+			"byteOffset": 26696,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 26840,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 27488,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 864,
+			"byteOffset": 28136,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 432,
+			"byteOffset": 29000,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 432,
+			"byteOffset": 29432,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 5760,
+			"byteOffset": 29864,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 6708,
+			"byteOffset": 35624,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 6708,
+			"byteOffset": 42332,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 8944,
+			"byteOffset": 49040,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 4472,
+			"byteOffset": 57984,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 4472,
+			"byteOffset": 62456,
+			"target": 34962
+		}
+	],
+	"materials": [
+		{
+			"name": "MI_dryice_transparent_lit_raymarch9_mod3_BakedFluidsimData1",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					1,
+					0,
+					1,
+					1
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				1,
+				0,
+				1
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_ChromeLite",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0.526041985,
+					0.846073985,
+					1,
+					1
+				],
+				"roughnessFactor": 0
+			}
+		},
+		{
+			"name": "MI_ChromeMedium_Green",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0.101562999,
+					0.203125,
+					0.118592001,
+					1
+				],
+				"roughnessFactor": 0
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch7_dup1_BakedFluidsimData2",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					1,
+					0,
+					1,
+					1
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				1,
+				0,
+				1
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch7_dup2_BakedFluidsimData3",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					1,
+					0,
+					1,
+					1
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				1,
+				0,
+				1
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_ChromeMedium_Blue",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0.214718997,
+					0.26621899,
+					0.286457986,
+					1
+				],
+				"metallicFactor": 0.99000001,
+				"roughnessFactor": 0
+			}
+		},
+		{
+			"name": "MI_ChromeDark",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0.057413999,
+					0.0765750036,
+					0.109375,
+					1
+				],
+				"roughnessFactor": 0
+			}
+		},
+		{
+			"name": "MI_ChromeMedium_Desat",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0.177024007,
+					0.286457986,
+					0.239280999,
+					1
+				],
+				"roughnessFactor": 0
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch9_mod4_BakedFluidsimData4",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0,
+					0,
+					0,
+					0
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				0.0303045567,
+				0.115708306,
+				0.14050293
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch7_dup1_BakedFluidsimData5",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0.00303526991,
+					0.0437350273,
+					0.0528606474,
+					0
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				0,
+				0.0797344223,
+				0.179931641
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch7_dup2_BakedFluidsimData6",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					1,
+					0,
+					1,
+					1
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				1,
+				0,
+				1
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch9_mod5_BakedFluidsimData7",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0,
+					0.0295568332,
+					0.0116122449,
+					0
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				0.0202684607,
+				0.0891113281,
+				0.0492733233
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch7_dup1_BakedFluidsimData8",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					1,
+					0,
+					1,
+					1
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				1,
+				0,
+				1
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		},
+		{
+			"name": "MI_dryice_transparent_lit_raymarch7_dup2_BakedFluidsimData9",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					1,
+					0,
+					1,
+					1
+				],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"emissiveFactor": [
+				1,
+				0,
+				1
+			],
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				}
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "BakedFluidsimData1",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 0
+				}
+			]
+		},
+		{
+			"name": "Cylinder",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TANGENT": 9,
+						"TEXCOORD_0": 10,
+						"TEXCOORD_1": 11
+					},
+					"indices": 6,
+					"material": 1
+				}
+			]
+		},
+		{
+			"name": "Cylinder",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TANGENT": 9,
+						"TEXCOORD_0": 10,
+						"TEXCOORD_1": 11
+					},
+					"indices": 6,
+					"material": 2
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData2",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 3
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData3",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 4
+				}
+			]
+		},
+		{
+			"name": "Cylinder",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TANGENT": 9,
+						"TEXCOORD_0": 10,
+						"TEXCOORD_1": 11
+					},
+					"indices": 6,
+					"material": 5
+				}
+			]
+		},
+		{
+			"name": "Cylinder",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TANGENT": 9,
+						"TEXCOORD_0": 10,
+						"TEXCOORD_1": 11
+					},
+					"indices": 6,
+					"material": 6
+				}
+			]
+		},
+		{
+			"name": "Cylinder",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TANGENT": 9,
+						"TEXCOORD_0": 10,
+						"TEXCOORD_1": 11
+					},
+					"indices": 6,
+					"material": 7
+				}
+			]
+		},
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 13,
+						"NORMAL": 14,
+						"TANGENT": 15,
+						"TEXCOORD_0": 16,
+						"TEXCOORD_1": 17
+					},
+					"indices": 12,
+					"material": 7
+				}
+			]
+		},
+		{
+			"name": "Sphere",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 19,
+						"NORMAL": 20,
+						"TANGENT": 21,
+						"TEXCOORD_0": 22,
+						"TEXCOORD_1": 23
+					},
+					"indices": 18,
+					"material": 2
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData4",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 8
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData5",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 9
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData6",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 10
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData7",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 11
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData8",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 12
+				}
+			]
+		},
+		{
+			"name": "BakedFluidsimData9",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 13
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "Brush1",
+			"translation": [
+				-0.899999976,
+				0.199999988,
+				1.10000002
+			]
+		},
+		{
+			"name": "Light Source",
+			"translation": [
+				40.2728119,
+				18.9526176,
+				128.707062
+			],
+			"rotation": [
+				0.731703877,
+				0.266562194,
+				-0.616583705,
+				-0.115666449
+			],
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"children": [
+				2
+			]
+		},
+		{
+			"name": "LightNode_Light Source",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 0
+				}
+			}
+		},
+		{
+			"name": "Player Start",
+			"translation": [
+				76,
+				24,
+				164.800003
+			],
+			"rotation": [
+				0.270430923,
+				0.588933468,
+				-0.318249404,
+				0.691911697
+			]
+		},
+		{
+			"name": "InstancedFoliageActor"
+		},
+		{
+			"name": "Atmospheric Fog",
+			"translation": [
+				0,
+				-1000,
+				0
+			],
+			"rotation": [
+				0.707103074,
+				-5.54823544e-07,
+				-9.31147315e-06,
+				0.707110524
+			]
+		},
+		{
+			"name": "SM_NinjaLogo_text2",
+			"translation": [
+				24.2250099,
+				29.0063915,
+				127.411285
+			],
+			"rotation": [
+				0.707102001,
+				5.72119419e-08,
+				-9.5468622e-06,
+				0.707111537
+			],
+			"scale": [
+				33.25,
+				33.25,
+				33.25
+			]
+		},
+		{
+			"name": "SM_NinjaLogo_N2",
+			"translation": [
+				24.5209351,
+				30.6163559,
+				127.411247
+			],
+			"rotation": [
+				0.707102001,
+				5.72119419e-08,
+				-9.5468622e-06,
+				0.707111537
+			],
+			"scale": [
+				33.25,
+				33.25,
+				33.25
+			]
+		},
+		{
+			"name": "Text2",
+			"translation": [
+				18.1264744,
+				13.7693701,
+				127.436485
+			],
+			"rotation": [
+				-5.82698704e-06,
+				-0.707101524,
+				-7.02925945e-07,
+				0.707112074
+			]
+		},
+		{
+			"name": "SM_NinjaLogo_puff",
+			"translation": [
+				24.224556,
+				30.5806389,
+				127.434975
+			],
+			"rotation": [
+				0.707103074,
+				-5.54823544e-07,
+				-9.31147315e-06,
+				0.707110524
+			],
+			"scale": [
+				33.25,
+				33.25,
+				33.25
+			]
+		},
+		{
+			"name": "PostProcessVolume",
+			"translation": [
+				46.5876732,
+				19.0428333,
+				129.603439
+			],
+			"rotation": [
+				0.707103074,
+				-5.54823544e-07,
+				-9.31147315e-06,
+				0.707110524
+			],
+			"scale": [
+				0.600000024,
+				0.600000024,
+				0.600000024
+			]
+		},
+		{
+			"name": "Text3",
+			"translation": [
+				18.1264744,
+				12.7744532,
+				127.436485
+			],
+			"rotation": [
+				-4.4792223e-06,
+				-0.707101524,
+				-1.5468014e-06,
+				0.707112074
+			]
+		},
+		{
+			"name": "Text4",
+			"translation": [
+				39.1597443,
+				9.59514427,
+				127.450706
+			],
+			"rotation": [
+				-4.29885449e-06,
+				-0.707101524,
+				-1.36643621e-06,
+				0.707112074
+			]
+		},
+		{
+			"name": "Text12",
+			"translation": [
+				38.6302986,
+				23.3547058,
+				125.758667
+			],
+			"rotation": [
+				-1.6027127e-07,
+				-0.707101524,
+				4.96370512e-06,
+				0.707112074
+			]
+		},
+		{
+			"name": "SkyLight",
+			"translation": [
+				43.5729103,
+				15.3988628,
+				128.707138
+			],
+			"rotation": [
+				0.707103074,
+				-5.54823544e-07,
+				-9.31147315e-06,
+				0.707110524
+			]
+		},
+		{
+			"name": "BakedFluidsimData1",
+			"translation": [
+				80.2891693,
+				23.6366005,
+				138.947357
+			],
+			"scale": [
+				10,
+				10,
+				10
+			],
+			"mesh": 0
+		},
+		{
+			"name": "PointLight7",
+			"translation": [
+				81.5999985,
+				32.2000008,
+				143.399994
+			],
+			"children": [
+				17
+			]
+		},
+		{
+			"name": "LightNode_PointLight7",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 1
+				}
+			}
+		},
+		{
+			"name": "ExponentialHeightFog",
+			"translation": [
+				43.559288,
+				18.736702,
+				128.70697
+			],
+			"rotation": [
+				0.707103074,
+				-5.54823544e-07,
+				-9.31147315e-06,
+				0.707110524
+			]
+		},
+		{
+			"name": "VolumeParticles1",
+			"translation": [
+				79.341423,
+				25.2365799,
+				142.747482
+			]
+		},
+		{
+			"name": "PointLight8",
+			"translation": [
+				82.7999954,
+				17.1000004,
+				139
+			],
+			"children": [
+				21
+			]
+		},
+		{
+			"name": "LightNode_PointLight8",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 2
+				}
+			}
+		},
+		{
+			"name": "Cylinder1",
+			"translation": [
+				74.970314,
+				15.6542225,
+				141.561829
+			],
+			"scale": [
+				1,
+				8.75,
+				1
+			],
+			"mesh": 1
+		},
+		{
+			"name": "SphereReflectionCapture1",
+			"translation": [
+				72.7047195,
+				13.8944321,
+				138.564194
+			],
+			"children": [
+				24,
+				25
+			]
+		},
+		{
+			"name": "DrawRadius0"
+		},
+		{
+			"name": "DrawRadius1"
+		},
+		{
+			"name": "Cauldron1",
+			"translation": [
+				80.1999969,
+				24.1999989,
+				129.199997
+			],
+			"scale": [
+				24,
+				15,
+				24
+			],
+			"mesh": 2
+		},
+		{
+			"name": "PointLight9",
+			"translation": [
+				70.5999985,
+				14.2999992,
+				132.699997
+			],
+			"children": [
+				28
+			]
+		},
+		{
+			"name": "LightNode_PointLight9",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 3
+				}
+			}
+		},
+		{
+			"name": "PointLight11",
+			"translation": [
+				63.9459648,
+				34.00177,
+				131.899994
+			],
+			"children": [
+				30
+			]
+		},
+		{
+			"name": "LightNode_PointLight11",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 4
+				}
+			}
+		},
+		{
+			"name": "PointLight12",
+			"translation": [
+				73.4000015,
+				13.0999994,
+				141.399994
+			],
+			"children": [
+				32
+			]
+		},
+		{
+			"name": "LightNode_PointLight12",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 5
+				}
+			}
+		},
+		{
+			"name": "PointLight14",
+			"translation": [
+				97.5315094,
+				13.5943689,
+				122.36599
+			],
+			"children": [
+				34
+			]
+		},
+		{
+			"name": "LightNode_PointLight14",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 6
+				}
+			}
+		},
+		{
+			"name": "PointLight15",
+			"translation": [
+				80.2028046,
+				43.8598785,
+				132.699997
+			],
+			"children": [
+				36
+			]
+		},
+		{
+			"name": "LightNode_PointLight15",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 7
+				}
+			}
+		},
+		{
+			"name": "BakedFluidsimData2",
+			"translation": [
+				74.5415573,
+				23.4582214,
+				136.085251
+			],
+			"rotation": [
+				0.00761159416,
+				-0.353587717,
+				0.0092153009,
+				0.935325027
+			],
+			"scale": [
+				10,
+				9,
+				10
+			],
+			"mesh": 3
+		},
+		{
+			"name": "PointLight13",
+			"translation": [
+				69.0823441,
+				32.670166,
+				132.807465
+			],
+			"children": [
+				39
+			]
+		},
+		{
+			"name": "LightNode_PointLight13",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 8
+				}
+			}
+		},
+		{
+			"name": "PointLight16",
+			"translation": [
+				86,
+				33.2000008,
+				134.800003
+			],
+			"children": [
+				41
+			]
+		},
+		{
+			"name": "LightNode_PointLight16",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 9
+				}
+			}
+		},
+		{
+			"name": "PointLight17",
+			"translation": [
+				70.4000015,
+				25.5999985,
+				126
+			],
+			"children": [
+				43
+			]
+		},
+		{
+			"name": "LightNode_PointLight17",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 10
+				}
+			}
+		},
+		{
+			"name": "BakedFluidsimData3",
+			"translation": [
+				86.7493668,
+				23.2605171,
+				134.276947
+			],
+			"rotation": [
+				0.011792467,
+				0.452281743,
+				0.00190558669,
+				0.891795099
+			],
+			"scale": [
+				10,
+				11.75,
+				10
+			],
+			"mesh": 4
+		},
+		{
+			"name": "Cylinder2",
+			"translation": [
+				69.6492157,
+				13.4475365,
+				134.760635
+			],
+			"scale": [
+				1,
+				4.5,
+				1
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b",
+			"translation": [
+				74.970314,
+				19.8066177,
+				141.561829
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1c",
+			"translation": [
+				75.2173538,
+				19.8066177,
+				140.96727
+			],
+			"rotation": [
+				0.66446352,
+				-0.241844967,
+				0.241845444,
+				0.664462209
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder3",
+			"translation": [
+				94.1973343,
+				16.584877,
+				126.232269
+			],
+			"rotation": [
+				0,
+				0.939856291,
+				-0,
+				0.341570139
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder3b",
+			"translation": [
+				94.1926804,
+				19.8066177,
+				126.228493
+			],
+			"rotation": [
+				0,
+				0.939856291,
+				-0,
+				0.341570139
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder2b",
+			"translation": [
+				69.6492157,
+				15.5407581,
+				134.760635
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder3c",
+			"translation": [
+				93.3289642,
+				19.7001286,
+				126.599693
+			],
+			"rotation": [
+				0.699534953,
+				-0.699534953,
+				-0.103203282,
+				0.103203282
+			],
+			"scale": [
+				0.300000012,
+				7.25,
+				0.300000012
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder12",
+			"translation": [
+				75.1508942,
+				16.584877,
+				117.867332
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder14",
+			"translation": [
+				91.2268524,
+				16.3834667,
+				122.470551
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder16",
+			"translation": [
+				83.5127411,
+				16.584877,
+				117.235565
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "PointLight18",
+			"translation": [
+				67.5436249,
+				34.5949974,
+				122.60807
+			],
+			"children": [
+				56
+			]
+		},
+		{
+			"name": "LightNode_PointLight18",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 11
+				}
+			}
+		},
+		{
+			"name": "PointLight19",
+			"translation": [
+				67.8562851,
+				29.9578362,
+				133.65625
+			],
+			"children": [
+				58
+			]
+		},
+		{
+			"name": "LightNode_PointLight19",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 12
+				}
+			}
+		},
+		{
+			"name": "Cylinder13",
+			"translation": [
+				68.4799805,
+				16.584877,
+				125.526573
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Base1",
+			"translation": [
+				81.1574097,
+				11.4529819,
+				129.837234
+			],
+			"scale": [
+				28,
+				0.25,
+				28
+			],
+			"mesh": 7
+		},
+		{
+			"name": "Cylinder1b2",
+			"translation": [
+				74.970314,
+				11.9180908,
+				141.561829
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder3b2",
+			"translation": [
+				94.1926804,
+				11.918088,
+				126.228493
+			],
+			"rotation": [
+				0,
+				0.939856291,
+				-0,
+				0.341570139
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder2b2",
+			"translation": [
+				69.6492157,
+				11.9180908,
+				134.760635
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "PointLight20",
+			"translation": [
+				59.4497108,
+				0.604882777,
+				98.5575104
+			],
+			"children": [
+				65
+			]
+		},
+		{
+			"name": "LightNode_PointLight20",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 13
+				}
+			}
+		},
+		{
+			"name": "PointLight21",
+			"translation": [
+				68.0790939,
+				8.77345276,
+				120.029312
+			],
+			"children": [
+				67
+			]
+		},
+		{
+			"name": "LightNode_PointLight21",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 14
+				}
+			}
+		},
+		{
+			"name": "Cylinder7",
+			"translation": [
+				88.8005371,
+				36.3101959,
+				126.94236
+			],
+			"rotation": [
+				-0.532389104,
+				0.63249743,
+				0.428000152,
+				0.365136594
+			],
+			"scale": [
+				1,
+				10.5,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b5",
+			"translation": [
+				83.928009,
+				36.6436043,
+				127.797409
+			],
+			"rotation": [
+				-0.532389104,
+				0.63249743,
+				0.428000152,
+				0.365136594
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1c3",
+			"translation": [
+				83.9295273,
+				36.7579689,
+				127.94442
+			],
+			"rotation": [
+				0.14531216,
+				0.745072901,
+				0.0811429247,
+				0.645884454
+			],
+			"scale": [
+				0.200000003,
+				1,
+				0.200000003
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b6",
+			"translation": [
+				94.060997,
+				35.9546585,
+				126.130211
+			],
+			"rotation": [
+				-0.532389104,
+				0.63249743,
+				0.428000152,
+				0.365136594
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder8",
+			"translation": [
+				83.7829742,
+				36.5019951,
+				127.345184
+			],
+			"rotation": [
+				-0.823383987,
+				0.0660991222,
+				0.0410818644,
+				0.562122762
+			],
+			"scale": [
+				0.800000012,
+				10,
+				0.800000012
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b7",
+			"translation": [
+				83.1181335,
+				35.0954399,
+				123.768631
+			],
+			"rotation": [
+				-0.823383987,
+				0.0660991222,
+				0.0410818644,
+				0.562122762
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1c4",
+			"translation": [
+				82.8546143,
+				35.1314507,
+				123.803581
+			],
+			"rotation": [
+				-0.14590922,
+				0.142094269,
+				0.316908926,
+				0.926330745
+			],
+			"scale": [
+				0.200000003,
+				1,
+				0.200000003
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b8",
+			"translation": [
+				84.5785065,
+				38.185257,
+				131.624374
+			],
+			"rotation": [
+				-0.823658109,
+				0.0708017349,
+				0.0444478206,
+				0.560891092
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder9",
+			"translation": [
+				94.1472549,
+				28.1465855,
+				126.213066
+			],
+			"rotation": [
+				1.8977189e-05,
+				0.793881476,
+				0.000787436846,
+				0.608072221
+			],
+			"scale": [
+				1,
+				14.75,
+				1
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder3b3",
+			"translation": [
+				94.1926804,
+				21.0983219,
+				126.228493
+			],
+			"rotation": [
+				0,
+				0.939856291,
+				-0,
+				0.341570139
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "PointLight22",
+			"translation": [
+				102.330727,
+				36.9575882,
+				122.491318
+			],
+			"children": [
+				79
+			]
+		},
+		{
+			"name": "LightNode_PointLight22",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 15
+				}
+			}
+		},
+		{
+			"name": "Base3",
+			"translation": [
+				81.1574097,
+				11.4529572,
+				147.902588
+			],
+			"scale": [
+				28,
+				0.25,
+				28
+			],
+			"mesh": 7
+		},
+		{
+			"name": "Base2",
+			"translation": [
+				81.1574097,
+				11.4522581,
+				138.273468
+			],
+			"scale": [
+				28,
+				0.25,
+				18.25
+			],
+			"mesh": 8
+		},
+		{
+			"name": "Cylinder2b3",
+			"translation": [
+				68.4870682,
+				21.319828,
+				125.506485
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder2b4",
+			"translation": [
+				75.0790863,
+				21.319828,
+				117.939819
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder2b5",
+			"translation": [
+				83.4301071,
+				21.319828,
+				117.183983
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder2b6",
+			"translation": [
+				91.2565231,
+				21.319828,
+				122.659981
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "PointLight23",
+			"translation": [
+				94.384079,
+				13.0734529,
+				146.842911
+			],
+			"children": [
+				87
+			]
+		},
+		{
+			"name": "LightNode_PointLight23",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 16
+				}
+			}
+		},
+		{
+			"name": "Cylinder1c2",
+			"translation": [
+				69.4278336,
+				15.3977413,
+				134.612488
+			],
+			"rotation": [
+				0.583316624,
+				-0.399677485,
+				0.39967829,
+				0.583315611
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b3",
+			"translation": [
+				74.970314,
+				20.199894,
+				141.561829
+			],
+			"scale": [
+				1.10000002,
+				0.300000012,
+				1.10000002
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b4",
+			"translation": [
+				74.970314,
+				19.1398315,
+				141.561829
+			],
+			"scale": [
+				1.20000005,
+				0.200000003,
+				1.20000005
+			],
+			"mesh": 1
+		},
+		{
+			"name": "CauldronRing1",
+			"translation": [
+				80.1999969,
+				31.0820923,
+				129.199997
+			],
+			"scale": [
+				24.6000023,
+				0.999999702,
+				24.6000023
+			],
+			"mesh": 2
+		},
+		{
+			"name": "Cylinder1c5",
+			"translation": [
+				68.6257858,
+				21.2932243,
+				125.630638
+			],
+			"rotation": [
+				0.428437114,
+				-0.562530816,
+				0.562532425,
+				0.428436756
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Text5",
+			"translation": [
+				64.1130295,
+				18.5266857,
+				126.369194
+			],
+			"rotation": [
+				6.10538473e-06,
+				-0.70710659,
+				3.09235838e-06,
+				0.707107067
+			]
+		},
+		{
+			"name": "Text6",
+			"translation": [
+				63.795002,
+				25.9148388,
+				126.369057
+			],
+			"rotation": [
+				6.1027954e-06,
+				-0.70710659,
+				3.0915046e-06,
+				0.707107067
+			]
+		},
+		{
+			"name": "CauldronBottom1",
+			"translation": [
+				80.1999969,
+				16.7999992,
+				129.199997
+			],
+			"scale": [
+				24.0000057,
+				7.49998951,
+				24.0000057
+			],
+			"mesh": 9
+		},
+		{
+			"name": "BakedFluidsimData4",
+			"translation": [
+				110.882378,
+				23.6366005,
+				189.573029
+			],
+			"rotation": [
+				1.44862054e-06,
+				-0.866025925,
+				2.50909056e-06,
+				0.499999076
+			],
+			"scale": [
+				10,
+				10,
+				10
+			],
+			"mesh": 10
+		},
+		{
+			"name": "PointLight10",
+			"translation": [
+				106.02446,
+				32.1356163,
+				188.281906
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				98
+			]
+		},
+		{
+			"name": "LightNode_PointLight10",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 17
+				}
+			}
+		},
+		{
+			"name": "VolumeParticles2",
+			"translation": [
+				108.065254,
+				25.2365799,
+				186.852188
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			]
+		},
+		{
+			"name": "PointLight24",
+			"translation": [
+				109.581383,
+				17.1000004,
+				191.72113
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				101
+			]
+		},
+		{
+			"name": "LightNode_PointLight24",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 18
+				}
+			}
+		},
+		{
+			"name": "Cylinder4",
+			"translation": [
+				111.277657,
+				15.6542225,
+				183.659531
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1,
+				8.75,
+				1
+			],
+			"mesh": 1
+		},
+		{
+			"name": "SphereReflectionCapture2",
+			"translation": [
+				115.00647,
+				13.8944321,
+				183.196289
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				104,
+				105
+			]
+		},
+		{
+			"name": "DrawRadius0"
+		},
+		{
+			"name": "DrawRadius1"
+		},
+		{
+			"name": "Cauldron2",
+			"translation": [
+				119.368416,
+				24.1999989,
+				194.369492
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				24,
+				15,
+				24
+			],
+			"mesh": 2
+		},
+		{
+			"name": "PointLight25",
+			"translation": [
+				121.13736,
+				14.2999992,
+				184.305664
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				108
+			]
+		},
+		{
+			"name": "LightNode_PointLight25",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 19
+				}
+			}
+		},
+		{
+			"name": "PointLight26",
+			"translation": [
+				125.157227,
+				34.00177,
+				178.943085
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				110
+			]
+		},
+		{
+			"name": "LightNode_PointLight26",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 20
+				}
+			}
+		},
+		{
+			"name": "PointLight27",
+			"translation": [
+				117.502945,
+				13.0999994,
+				197.280502
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				112
+			]
+		},
+		{
+			"name": "LightNode_PointLight27",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 21
+				}
+			}
+		},
+		{
+			"name": "PointLight28",
+			"translation": [
+				116.62104,
+				12.6874609,
+				212.796005
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				114
+			]
+		},
+		{
+			"name": "LightNode_PointLight28",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 22
+				}
+			}
+		},
+		{
+			"name": "PointLight29",
+			"translation": [
+				116.335945,
+				43.8598785,
+				192.621902
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				116
+			]
+		},
+		{
+			"name": "LightNode_PointLight29",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 23
+				}
+			}
+		},
+		{
+			"name": "BakedFluidsimData5",
+			"translation": [
+				116.234848,
+				23.4582214,
+				186.026505
+			],
+			"rotation": [
+				-0.00417492725,
+				-0.986809373,
+				0.0111994818,
+				0.16144532
+			],
+			"scale": [
+				10,
+				9,
+				10
+			],
+			"mesh": 11
+		},
+		{
+			"name": "PointLight30",
+			"translation": [
+				122.858727,
+				32.670166,
+				182.544571
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				119
+			]
+		},
+		{
+			"name": "LightNode_PointLight30",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 24
+				}
+			}
+		},
+		{
+			"name": "PointLight31",
+			"translation": [
+				111.618668,
+				33.2000008,
+				196.592422
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				121
+			]
+		},
+		{
+			"name": "LightNode_PointLight31",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 25
+				}
+			}
+		},
+		{
+			"name": "BakedFluidsimData6",
+			"translation": [
+				111.696968,
+				23.2605171,
+				197.502899
+			],
+			"rotation": [
+				0.00424593315,
+				-0.546177268,
+				0.0111653758,
+				0.837584436
+			],
+			"scale": [
+				10,
+				11.75,
+				10
+			],
+			"mesh": 12
+		},
+		{
+			"name": "Cylinder5",
+			"translation": [
+				119.828201,
+				13.4475365,
+				182.451935
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1,
+				4.5,
+				1
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b9",
+			"translation": [
+				111.277657,
+				19.8066177,
+				183.659531
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1c6",
+			"translation": [
+				111.669022,
+				19.8066177,
+				184.170715
+			],
+			"rotation": [
+				0.122786678,
+				-0.696363747,
+				0.696365178,
+				0.122786514
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder6",
+			"translation": [
+				114.939842,
+				16.584877,
+				207.975388
+			],
+			"rotation": [
+				0,
+				0.174117789,
+				-0,
+				0.98472482
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder3b4",
+			"translation": [
+				114.945427,
+				19.8066177,
+				207.973282
+			],
+			"rotation": [
+				0,
+				0.174117789,
+				-0,
+				0.98472482
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder2b7",
+			"translation": [
+				119.828201,
+				15.5407581,
+				182.451935
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder3c2",
+			"translation": [
+				115.05584,
+				19.7001286,
+				207.039642
+			],
+			"rotation": [
+				-0.439142883,
+				0.439142883,
+				-0.554214358,
+				0.554214358
+			],
+			"scale": [
+				0.300000012,
+				7.25,
+				0.300000012
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder15",
+			"translation": [
+				137.007355,
+				16.584877,
+				210.563217
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder17",
+			"translation": [
+				133.37355,
+				16.584877,
+				218.120667
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "PointLight32",
+			"translation": [
+				131.405411,
+				34.5949974,
+				186.704758
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				133
+			]
+		},
+		{
+			"name": "LightNode_PointLight32",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 26
+				}
+			}
+		},
+		{
+			"name": "PointLight33",
+			"translation": [
+				121.681091,
+				29.9578362,
+				181.451401
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				135
+			]
+		},
+		{
+			"name": "LightNode_PointLight33",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 27
+				}
+			}
+		},
+		{
+			"name": "Cylinder18",
+			"translation": [
+				128.409744,
+				16.584877,
+				186.056427
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Base4",
+			"translation": [
+				118.33786,
+				11.4529819,
+				194.880035
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				28,
+				0.25,
+				28
+			],
+			"mesh": 7
+		},
+		{
+			"name": "Cylinder3b5",
+			"translation": [
+				114.945427,
+				11.918088,
+				207.973282
+			],
+			"rotation": [
+				0,
+				0.174117789,
+				-0,
+				0.98472482
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "PointLight34",
+			"translation": [
+				156.280731,
+				0.604882777,
+				191.720566
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				140
+			]
+		},
+		{
+			"name": "LightNode_PointLight34",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 28
+				}
+			}
+		},
+		{
+			"name": "PointLight35",
+			"translation": [
+				136.970978,
+				14.4734535,
+				187.622482
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				142
+			]
+		},
+		{
+			"name": "LightNode_PointLight35",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 29
+				}
+			}
+		},
+		{
+			"name": "Cylinder10",
+			"translation": [
+				117.0233,
+				36.3101959,
+				202.946594
+			],
+			"rotation": [
+				-0.636853099,
+				2.97411498e-05,
+				-0.247063592,
+				0.730327129
+			],
+			"scale": [
+				1,
+				10.5,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b10",
+			"translation": [
+				118.719086,
+				36.6436043,
+				198.299332
+			],
+			"rotation": [
+				-0.636853099,
+				2.97411498e-05,
+				-0.247063592,
+				0.730327129
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1c7",
+			"translation": [
+				118.591011,
+				36.7579689,
+				198.227142
+			],
+			"rotation": [
+				0.00238391338,
+				-0.186818212,
+				0.166415498,
+				0.968193769
+			],
+			"scale": [
+				0.200000003,
+				1,
+				0.200000003
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b11",
+			"translation": [
+				115.096405,
+				35.9546585,
+				207.908356
+			],
+			"rotation": [
+				-0.636853099,
+				2.97411498e-05,
+				-0.247063592,
+				0.730327129
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder11",
+			"translation": [
+				119.183243,
+				36.5019951,
+				198.399857
+			],
+			"rotation": [
+				-0.447268188,
+				-0.453764707,
+				-0.692530572,
+				0.338304818
+			],
+			"scale": [
+				0.800000012,
+				10,
+				0.800000012
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b12",
+			"translation": [
+				122.613052,
+				35.0954399,
+				199.612381
+			],
+			"rotation": [
+				-0.447268188,
+				-0.453764707,
+				-0.692530572,
+				0.338304818
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1c8",
+			"translation": [
+				122.714516,
+				35.1314507,
+				199.366699
+			],
+			"rotation": [
+				-0.347403646,
+				-0.731179357,
+				0.0320957042,
+				0.586223066
+			],
+			"scale": [
+				0.200000003,
+				1,
+				0.200000003
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b13",
+			"translation": [
+				115.079597,
+				38.185257,
+				196.949188
+			],
+			"rotation": [
+				-0.450320452,
+				-0.450345963,
+				-0.691085756,
+				0.341760814
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder19",
+			"translation": [
+				114.981522,
+				28.1465855,
+				207.941635
+			],
+			"rotation": [
+				-0.000672452559,
+				-0.129667327,
+				0.000410152163,
+				0.99155724
+			],
+			"scale": [
+				1,
+				14.75,
+				1
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder3b6",
+			"translation": [
+				114.945427,
+				21.0983219,
+				207.973282
+			],
+			"rotation": [
+				0,
+				0.174117789,
+				-0,
+				0.98472482
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "PointLight36",
+			"translation": [
+				114.112869,
+				36.9575882,
+				216.889648
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				154
+			]
+		},
+		{
+			"name": "LightNode_PointLight36",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 30
+				}
+			}
+		},
+		{
+			"name": "Base5",
+			"translation": [
+				102.69281,
+				11.4529572,
+				185.847305
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				28,
+				0.25,
+				28
+			],
+			"mesh": 7
+		},
+		{
+			"name": "Base6",
+			"translation": [
+				111.031891,
+				11.4522581,
+				190.661865
+			],
+			"rotation": [
+				-1.35262468e-07,
+				-0.866025925,
+				-2.34282041e-07,
+				0.499999076
+			],
+			"scale": [
+				28,
+				0.25,
+				18.25
+			],
+			"mesh": 8
+		},
+		{
+			"name": "PointLight37",
+			"translation": [
+				96.7328033,
+				13.0734529,
+				198.289612
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				158
+			]
+		},
+		{
+			"name": "LightNode_PointLight37",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 31
+				}
+			}
+		},
+		{
+			"name": "Cylinder1c9",
+			"translation": [
+				120.067184,
+				15.3977413,
+				182.33429
+			],
+			"rotation": [
+				0.0544740185,
+				0.705005109,
+				-0.705005646,
+				0.0544737242
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b14",
+			"translation": [
+				111.277657,
+				20.199894,
+				183.659531
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1.10000002,
+				0.300000012,
+				1.10000002
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b15",
+			"translation": [
+				116.577652,
+				19.1398315,
+				198.559525
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				1.20000005,
+				0.200000003,
+				1.20000005
+			],
+			"mesh": 1
+		},
+		{
+			"name": "CauldronRing2",
+			"translation": [
+				119.368416,
+				31.0820923,
+				194.369492
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				24.6000023,
+				0.999999583,
+				24.6000023
+			],
+			"mesh": 2
+		},
+		{
+			"name": "Cylinder1c10",
+			"translation": [
+				133.546707,
+				21.2932243,
+				201.03064
+			],
+			"rotation": [
+				0.272949725,
+				0.652302384,
+				-0.652302921,
+				0.272948653
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Text7",
+			"translation": [
+				129.990799,
+				19.1905212,
+				180.832657
+			],
+			"rotation": [
+				-3.74066531e-07,
+				0.965925574,
+				-6.83092776e-06,
+				0.258820087
+			]
+		},
+		{
+			"name": "Text8",
+			"translation": [
+				130.022644,
+				23.3148384,
+				180.777847
+			],
+			"rotation": [
+				-3.74066531e-07,
+				0.965925574,
+				-6.83092776e-06,
+				0.258820087
+			]
+		},
+		{
+			"name": "CauldronBottom2",
+			"translation": [
+				119.368416,
+				16.7999992,
+				194.369492
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"scale": [
+				24.0000057,
+				7.49998951,
+				24.0000057
+			],
+			"mesh": 9
+		},
+		{
+			"name": "PointLight38",
+			"translation": [
+				107.23922,
+				17.2833805,
+				185.949081
+			],
+			"rotation": [
+				-0,
+				-0.866025925,
+				0,
+				0.499999076
+			],
+			"children": [
+				168
+			]
+		},
+		{
+			"name": "LightNode_PointLight38",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 32
+				}
+			}
+		},
+		{
+			"name": "Text9",
+			"translation": [
+				64.1585922,
+				15.2885351,
+				126.369194
+			],
+			"rotation": [
+				6.1027954e-06,
+				-0.70710659,
+				3.0915046e-06,
+				0.707107067
+			]
+		},
+		{
+			"name": "Text10",
+			"translation": [
+				129.956711,
+				16.0026798,
+				180.891739
+			],
+			"rotation": [
+				-3.74066531e-07,
+				0.965925574,
+				-6.83092776e-06,
+				0.258820087
+			]
+		},
+		{
+			"name": "BakedFluidsimData7",
+			"translation": [
+				48.5953903,
+				23.6365433,
+				188.909683
+			],
+			"rotation": [
+				1.38151267e-06,
+				0.866025865,
+				-2.39285532e-06,
+				0.499999195
+			],
+			"scale": [
+				10,
+				10,
+				10
+			],
+			"mesh": 13
+		},
+		{
+			"name": "PointLight39",
+			"translation": [
+				51.0238647,
+				14.8744221,
+				188.356995
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				173
+			]
+		},
+		{
+			"name": "LightNode_PointLight39",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 33
+				}
+			}
+		},
+		{
+			"name": "VolumeParticles3",
+			"translation": [
+				52.3602524,
+				25.2365208,
+				187.830353
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			]
+		},
+		{
+			"name": "PointLight40",
+			"translation": [
+				47.3855476,
+				17.0999413,
+				186.708939
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				176
+			]
+		},
+		{
+			"name": "LightNode_PointLight40",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 34
+				}
+			}
+		},
+		{
+			"name": "Cylinder20",
+			"translation": [
+				53.519062,
+				15.6541634,
+				192.20871
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1,
+				8.75,
+				1
+			],
+			"mesh": 1
+		},
+		{
+			"name": "SphereReflectionCapture3",
+			"translation": [
+				39.1557808,
+				13.8943739,
+				210.669571
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				179,
+				180
+			]
+		},
+		{
+			"name": "DrawRadius0"
+		},
+		{
+			"name": "DrawRadius1"
+		},
+		{
+			"name": "Cauldron3",
+			"translation": [
+				40.198513,
+				24.1999416,
+				193.860626
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				24,
+				15,
+				24
+			],
+			"mesh": 2
+		},
+		{
+			"name": "PointLight41",
+			"translation": [
+				34.5777931,
+				14.2999411,
+				215.921173
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				183
+			]
+		},
+		{
+			"name": "LightNode_PointLight41",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 35
+				}
+			}
+		},
+		{
+			"name": "PointLight42",
+			"translation": [
+				50.6638451,
+				34.001709,
+				206.587006
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				185
+			]
+		},
+		{
+			"name": "LightNode_PointLight42",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 36
+				}
+			}
+		},
+		{
+			"name": "PointLight43",
+			"translation": [
+				41.2640228,
+				13.0999413,
+				208.649551
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				187
+			]
+		},
+		{
+			"name": "LightNode_PointLight43",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 37
+				}
+			}
+		},
+		{
+			"name": "PointLight44",
+			"translation": [
+				25.6142769,
+				13.5943098,
+				182.268082
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				189
+			]
+		},
+		{
+			"name": "LightNode_PointLight44",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 38
+				}
+			}
+		},
+		{
+			"name": "PointLight45",
+			"translation": [
+				43.2281647,
+				43.8598175,
+				192.108154
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				191
+			]
+		},
+		{
+			"name": "LightNode_PointLight45",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 39
+				}
+			}
+		},
+		{
+			"name": "BakedFluidsimData8",
+			"translation": [
+				48.9905663,
+				23.4581642,
+				195.318314
+			],
+			"rotation": [
+				0.0117864981,
+				0.633221805,
+				-0.00198417087,
+				0.773878217
+			],
+			"scale": [
+				10,
+				9,
+				10
+			],
+			"mesh": 14
+		},
+		{
+			"name": "PointLight46",
+			"translation": [
+				48.8815231,
+				32.6701088,
+				201.685028
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				194
+			]
+		},
+		{
+			"name": "LightNode_PointLight46",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 40
+				}
+			}
+		},
+		{
+			"name": "PointLight47",
+			"translation": [
+				42.148243,
+				33.1999397,
+				186.037628
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				196
+			]
+		},
+		{
+			"name": "LightNode_PointLight47",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 41
+				}
+			}
+		},
+		{
+			"name": "BakedFluidsimData9",
+			"translation": [
+				41.3205261,
+				23.260458,
+				185.650208
+			],
+			"rotation": [
+				0.00754651194,
+				0.998458147,
+				-0.00925979391,
+				0.054208938
+			],
+			"scale": [
+				10,
+				11.75,
+				10
+			],
+			"mesh": 15
+		},
+		{
+			"name": "Cylinder21",
+			"translation": [
+				37.3896103,
+				13.4474773,
+				215.217575
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1,
+				4.5,
+				1
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b16",
+			"translation": [
+				53.519062,
+				19.8065605,
+				192.20871
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1c11",
+			"translation": [
+				52.8806038,
+				19.8065605,
+				192.292068
+			],
+			"rotation": [
+				0.541675746,
+				0.454519033,
+				-0.454519689,
+				0.541674852
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder22",
+			"translation": [
+				30.6296864,
+				16.5848179,
+				183.222458
+			],
+			"rotation": [
+				-0,
+				-0.765735388,
+				0,
+				0.643155754
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder2b8",
+			"translation": [
+				37.3896103,
+				15.540699,
+				215.217575
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder3c3",
+			"translation": [
+				31.3820705,
+				19.7000694,
+				183.790771
+			],
+			"rotation": [
+				0.260391355,
+				-0.260391355,
+				-0.657416463,
+				0.657416463
+			],
+			"scale": [
+				0.300000012,
+				7.25,
+				0.300000012
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder23",
+			"translation": [
+				32.9087296,
+				16.5848179,
+				203.899643
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder24",
+			"translation": [
+				28.1806431,
+				16.5848179,
+				196.973984
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "PointLight48",
+			"translation": [
+				40.8179474,
+				34.5949402,
+				208.117294
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				207
+			]
+		},
+		{
+			"name": "LightNode_PointLight48",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 42
+				}
+			}
+		},
+		{
+			"name": "PointLight49",
+			"translation": [
+				50.2296295,
+				29.957777,
+				202.322418
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				209
+			]
+		},
+		{
+			"name": "LightNode_PointLight49",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 43
+				}
+			}
+		},
+		{
+			"name": "Cylinder25",
+			"translation": [
+				42.877285,
+				16.5848179,
+				205.847107
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1,
+				10,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Base7",
+			"translation": [
+				40.2716789,
+				11.4529238,
+				192.712845
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				28,
+				0.25,
+				28
+			],
+			"mesh": 7
+		},
+		{
+			"name": "Cylinder3b7",
+			"translation": [
+				30.6287689,
+				11.9180298,
+				183.228378
+			],
+			"rotation": [
+				-0,
+				-0.765735388,
+				0,
+				0.643155754
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "PointLight50",
+			"translation": [
+				29.0169907,
+				13.0733948,
+				230.17836
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				214
+			]
+		},
+		{
+			"name": "LightNode_PointLight50",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 44
+				}
+			}
+		},
+		{
+			"name": "Cylinder26",
+			"translation": [
+				33.9430466,
+				36.3101349,
+				187.541168
+			],
+			"rotation": [
+				-0.10446576,
+				-0.63246578,
+				-0.675062358,
+				0.36519143
+			],
+			"scale": [
+				1,
+				10.5,
+				1
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b17",
+			"translation": [
+				37.1198425,
+				36.6435471,
+				191.333374
+			],
+			"rotation": [
+				-0.10446576,
+				-0.63246578,
+				-0.675062358,
+				0.36519143
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b18",
+			"translation": [
+				30.6095104,
+				35.9545975,
+				183.391556
+			],
+			"rotation": [
+				-0.10446576,
+				-0.63246578,
+				-0.675062358,
+				0.36519143
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder27",
+			"translation": [
+				36.8007202,
+				36.5019341,
+				191.685074
+			],
+			"rotation": [
+				-0.37611413,
+				0.519862115,
+				0.733612359,
+				0.223817959
+			],
+			"scale": [
+				0.800000012,
+				10,
+				0.800000012
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b19",
+			"translation": [
+				34.0357628,
+				35.0953827,
+				194.049133
+			],
+			"rotation": [
+				-0.37611413,
+				0.519862115,
+				0.733612359,
+				0.223817959
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 6
+		},
+		{
+			"name": "Cylinder1b20",
+			"translation": [
+				40.1087875,
+				38.1851997,
+				188.856522
+			],
+			"rotation": [
+				-0.373335719,
+				0.521146894,
+				0.735532939,
+				0.21912922
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder28",
+			"translation": [
+				30.6380844,
+				28.1465282,
+				183.275421
+			],
+			"rotation": [
+				-0.000691429537,
+				-0.923546314,
+				-0.000377282908,
+				0.383486092
+			],
+			"scale": [
+				1,
+				14.75,
+				1
+			],
+			"mesh": 5
+		},
+		{
+			"name": "Cylinder3b8",
+			"translation": [
+				30.6287689,
+				21.0982628,
+				183.228378
+			],
+			"rotation": [
+				-0,
+				-0.765735388,
+				0,
+				0.643155754
+			],
+			"scale": [
+				1.29999995,
+				1,
+				1.29999995
+			],
+			"mesh": 5
+		},
+		{
+			"name": "PointLight51",
+			"translation": [
+				23.3231449,
+				36.9575272,
+				178.049179
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				224
+			]
+		},
+		{
+			"name": "LightNode_PointLight51",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 45
+				}
+			}
+		},
+		{
+			"name": "Base8",
+			"translation": [
+				55.9167175,
+				11.452899,
+				183.680115
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				28,
+				0.25,
+				28
+			],
+			"mesh": 7
+		},
+		{
+			"name": "Base9",
+			"translation": [
+				47.5776558,
+				11.452199,
+				188.49469
+			],
+			"rotation": [
+				-1.35262397e-07,
+				0.866025865,
+				2.34281856e-07,
+				0.499999195
+			],
+			"scale": [
+				28,
+				0.25,
+				18.25
+			],
+			"mesh": 8
+		},
+		{
+			"name": "PointLight52",
+			"translation": [
+				48.1212692,
+				13.0733948,
+				172.297501
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				228
+			]
+		},
+		{
+			"name": "LightNode_PointLight52",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 46
+				}
+			}
+		},
+		{
+			"name": "Cylinder1c12",
+			"translation": [
+				37.3719902,
+				15.3976831,
+				215.483353
+			],
+			"rotation": [
+				0.637789369,
+				0.305328459,
+				-0.305328816,
+				0.637788057
+			],
+			"scale": [
+				0.200000003,
+				2.75,
+				0.200000003
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b21",
+			"translation": [
+				53.519062,
+				20.1998367,
+				192.20871
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1.10000002,
+				0.300000012,
+				1.10000002
+			],
+			"mesh": 1
+		},
+		{
+			"name": "Cylinder1b22",
+			"translation": [
+				53.519062,
+				19.1397743,
+				192.20871
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				1.20000005,
+				0.200000003,
+				1.20000005
+			],
+			"mesh": 1
+		},
+		{
+			"name": "CauldronRing3",
+			"translation": [
+				40.198513,
+				31.0820332,
+				193.860626
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				24.6000023,
+				1,
+				24.6000023
+			],
+			"mesh": 2
+		},
+		{
+			"name": "Text11",
+			"translation": [
+				46.2678299,
+				19.9904461,
+				210.03447
+			],
+			"rotation": [
+				5.72871568e-06,
+				0.258820087,
+				-3.73942726e-06,
+				0.965925574
+			]
+		},
+		{
+			"name": "Text13",
+			"translation": [
+				46.2994308,
+				24.1147633,
+				210.089447
+			],
+			"rotation": [
+				5.72871568e-06,
+				0.258820087,
+				-3.73942726e-06,
+				0.965925574
+			]
+		},
+		{
+			"name": "CauldronBottom3",
+			"translation": [
+				40.198513,
+				16.7999401,
+				193.860626
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"scale": [
+				24.0000057,
+				7.49998999,
+				24.0000057
+			],
+			"mesh": 9
+		},
+		{
+			"name": "PointLight53",
+			"translation": [
+				51.1811104,
+				26.8004704,
+				188.155853
+			],
+			"rotation": [
+				0,
+				0.866025865,
+				-0,
+				0.499999195
+			],
+			"children": [
+				237
+			]
+		},
+		{
+			"name": "LightNode_PointLight53",
+			"rotation": [
+				-0,
+				-0.707106829,
+				0,
+				0.707106769
+			],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 47
+				}
+			}
+		},
+		{
+			"name": "Text14",
+			"translation": [
+				46.2337303,
+				16.9026127,
+				209.975403
+			],
+			"rotation": [
+				5.72871568e-06,
+				0.258820087,
+				-3.73942726e-06,
+				0.965925574
+			]
+		},
+		{
+			"name": "BP_WriteNinjaPlayOutputToRenderTarget",
+			"translation": [
+				38.4106064,
+				11.3397999,
+				127.617119
+			],
+			"rotation": [
+				0.707103193,
+				-1.88265332e-07,
+				-9.60401121e-06,
+				0.707110345
+			]
+		},
+		{
+			"name": "Text15",
+			"translation": [
+				33.026474,
+				18.7693691,
+				127.436485
+			],
+			"rotation": [
+				-5.82511848e-06,
+				-0.707101524,
+				-7.0341315e-07,
+				0.707112074
+			]
+		},
+		{
+			"name": "Text16",
+			"translation": [
+				130.022644,
+				26.1148376,
+				180.677841
+			],
+			"rotation": [
+				-3.74066531e-07,
+				0.965925574,
+				-6.83092776e-06,
+				0.258820087
+			]
+		},
+		{
+			"name": "Text17",
+			"translation": [
+				46.2494316,
+				26.6147652,
+				210.002853
+			],
+			"rotation": [
+				5.72871568e-06,
+				0.258820087,
+				-3.73942726e-06,
+				0.965925574
+			]
+		},
+		{
+			"name": "Text18",
+			"translation": [
+				130.022644,
+				28.8148384,
+				180.677841
+			],
+			"rotation": [
+				-3.74066531e-07,
+				0.965925574,
+				-6.83092776e-06,
+				0.258820087
+			]
+		},
+		{
+			"name": "Text19",
+			"translation": [
+				46.2994308,
+				29.5147629,
+				210.089447
+			],
+			"rotation": [
+				5.72871568e-06,
+				0.258820087,
+				-3.73942726e-06,
+				0.965925574
+			]
+		},
+		{
+			"name": "Text20",
+			"translation": [
+				38.6302986,
+				27.654707,
+				125.758667
+			],
+			"rotation": [
+				-1.60400404e-07,
+				-0.707101524,
+				4.96122038e-06,
+				0.707112074
+			]
+		},
+		{
+			"name": "Text21",
+			"translation": [
+				63.795002,
+				27.4148388,
+				126.369057
+			],
+			"rotation": [
+				6.1027954e-06,
+				-0.70710659,
+				3.0915046e-06,
+				0.707107067
+			]
+		},
+		{
+			"name": "Text22",
+			"translation": [
+				18.1264744,
+				9.57445335,
+				127.436485
+			],
+			"rotation": [
+				-4.48165383e-06,
+				-0.707101524,
+				-1.54436987e-06,
+				0.707112074
+			]
+		},
+		{
+			"name": "Text23",
+			"translation": [
+				38.6302986,
+				21.8547058,
+				125.758667
+			],
+			"rotation": [
+				-1.60400404e-07,
+				-0.707101524,
+				4.96122038e-06,
+				0.707112074
+			]
+		}
+	],
+	"scenes": [
+		{
+			"name": "Usecases_Additional2",
+			"nodes": [
+				0,
+				1,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				18,
+				19,
+				20,
+				22,
+				23,
+				26,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				38,
+				40,
+				42,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				57,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				66,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				99,
+				100,
+				102,
+				103,
+				106,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				118,
+				120,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				134,
+				136,
+				137,
+				138,
+				139,
+				141,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				155,
+				156,
+				157,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				169,
+				170,
+				171,
+				172,
+				174,
+				175,
+				177,
+				178,
+				181,
+				182,
+				184,
+				186,
+				188,
+				190,
+				192,
+				193,
+				195,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				208,
+				210,
+				211,
+				212,
+				213,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				225,
+				226,
+				227,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248
+			]
+		}
+	],
+	"extensions":
+	{
+		"KHR_lights_punctual":
+		{
+			"lights": [
+				{
+					"name": "Light Source",
+					"type": "directional",
+					"color": [
+						0.745404184,
+						0.830769897,
+						1
+					]
+				},
+				{
+					"name": "PointLight7",
+					"type": "point",
+					"color": [
+						0.0998987257,
+						0.768151164,
+						0.25015828
+					],
+					"intensity": 40000,
+					"range": 12
+				},
+				{
+					"name": "PointLight8",
+					"type": "point",
+					"color": [
+						0,
+						0.467783809,
+						1
+					],
+					"intensity": 100,
+					"range": 20
+				},
+				{
+					"name": "PointLight9",
+					"type": "point",
+					"color": [
+						0.0998987257,
+						0.300543785,
+						1
+					],
+					"intensity": 10000,
+					"range": 17.5011158
+				},
+				{
+					"name": "PointLight11",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 800,
+					"range": 12
+				},
+				{
+					"name": "PointLight12",
+					"type": "point",
+					"color": [
+						0,
+						0.20155625,
+						0.904661179
+					],
+					"intensity": 100,
+					"range": 10
+				},
+				{
+					"name": "PointLight14",
+					"type": "point",
+					"color": [
+						0.0343398079,
+						0.904661179,
+						0.401977777
+					],
+					"intensity": 200000,
+					"range": 24
+				},
+				{
+					"name": "PointLight15",
+					"type": "point",
+					"color": [
+						0.0998987257,
+						0.904661179,
+						0.401977777
+					],
+					"intensity": 20,
+					"range": 20
+				},
+				{
+					"name": "PointLight13",
+					"type": "point",
+					"color": [
+						0,
+						0.300543785,
+						0.904661179
+					],
+					"intensity": 1000,
+					"range": 16
+				},
+				{
+					"name": "PointLight16",
+					"type": "point",
+					"color": [
+						0.168269396,
+						0.904661179,
+						0.177888408
+					],
+					"intensity": 100,
+					"range": 16
+				},
+				{
+					"name": "PointLight17",
+					"type": "point",
+					"color": [
+						0.0998987257,
+						0.300543785,
+						1
+					],
+					"intensity": 18000,
+					"range": 17.5011158
+				},
+				{
+					"name": "PointLight18",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 200,
+					"range": 30
+				},
+				{
+					"name": "PointLight19",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 500,
+					"range": 8
+				},
+				{
+					"name": "PointLight20",
+					"type": "point",
+					"color": [
+						0.291770637,
+						0.571124852,
+						0.921581864
+					],
+					"intensity": 4000,
+					"range": 20
+				},
+				{
+					"name": "PointLight21",
+					"type": "point",
+					"color": [
+						0.291770637,
+						0.571124852,
+						0.921581864
+					],
+					"intensity": 50,
+					"range": 20
+				},
+				{
+					"name": "PointLight22",
+					"type": "point",
+					"color": [
+						0.434153646,
+						0.921581864,
+						0.597201765
+					],
+					"intensity": 8,
+					"range": 20
+				},
+				{
+					"name": "PointLight23",
+					"type": "point",
+					"color": [
+						0.291770637,
+						0.571124852,
+						0.921581864
+					],
+					"intensity": 10,
+					"range": 20
+				},
+				{
+					"name": "PointLight10",
+					"type": "point",
+					"color": [
+						0.0761853829,
+						0.921581864,
+						0.208636865
+					],
+					"intensity": 40000,
+					"range": 12
+				},
+				{
+					"name": "PointLight24",
+					"type": "point",
+					"color": [
+						0,
+						0.467783809,
+						1
+					],
+					"intensity": 100,
+					"range": 20
+				},
+				{
+					"name": "PointLight25",
+					"type": "point",
+					"color": [
+						0.0998987257,
+						0.300543785,
+						1
+					],
+					"intensity": 10000,
+					"range": 17.5011158
+				},
+				{
+					"name": "PointLight26",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 800,
+					"range": 12
+				},
+				{
+					"name": "PointLight27",
+					"type": "point",
+					"color": [
+						0.450785786,
+						0.658374786,
+						0.904661179
+					],
+					"intensity": 100,
+					"range": 10
+				},
+				{
+					"name": "PointLight28",
+					"type": "point",
+					"color": [
+						0.0295568332,
+						0.955973327,
+						0.341914415
+					],
+					"intensity": 200000,
+					"range": 20
+				},
+				{
+					"name": "PointLight29",
+					"type": "point",
+					"color": [
+						0.226965874,
+						0.921581864,
+						0.337163627
+					],
+					"intensity": 20,
+					"range": 20
+				},
+				{
+					"name": "PointLight30",
+					"type": "point",
+					"color": [
+						0.309468925,
+						0.904661179,
+						0.708375752
+					],
+					"intensity": 1000,
+					"range": 26
+				},
+				{
+					"name": "PointLight31",
+					"type": "point",
+					"color": [
+						0.168269396,
+						0.904661179,
+						0.177888408
+					],
+					"intensity": 100,
+					"range": 16
+				},
+				{
+					"name": "PointLight32",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 200,
+					"range": 30
+				},
+				{
+					"name": "PointLight33",
+					"type": "point",
+					"color": [
+						0.304987311,
+						0.603827357,
+						0.434153646
+					],
+					"intensity": 500,
+					"range": 8
+				},
+				{
+					"name": "PointLight34",
+					"type": "point",
+					"color": [
+						0.291770637,
+						0.571124852,
+						0.921581864
+					],
+					"intensity": 4000,
+					"range": 20
+				},
+				{
+					"name": "PointLight35",
+					"type": "point",
+					"color": [
+						0.291770637,
+						0.571124852,
+						0.921581864
+					],
+					"intensity": 80,
+					"range": 30
+				},
+				{
+					"name": "PointLight36",
+					"type": "point",
+					"color": [
+						0.434153646,
+						0.921581864,
+						0.597201765
+					],
+					"intensity": 8,
+					"range": 20
+				},
+				{
+					"name": "PointLight37",
+					"type": "point",
+					"color": [
+						0.246201321,
+						0.527115107,
+						0.366252601
+					],
+					"intensity": 20,
+					"range": 10
+				},
+				{
+					"name": "PointLight38",
+					"type": "point",
+					"color": [
+						0.386429429,
+						0.462076992,
+						0.904661179
+					],
+					"intensity": 100,
+					"range": 18
+				},
+				{
+					"name": "PointLight39",
+					"type": "point",
+					"color": [
+						0.300543785,
+						0.921581864,
+						0.396755219
+					],
+					"intensity": 80000,
+					"range": 12
+				},
+				{
+					"name": "PointLight40",
+					"type": "point",
+					"color": [
+						0,
+						0.467783809,
+						1
+					],
+					"intensity": 100,
+					"range": 20
+				},
+				{
+					"name": "PointLight41",
+					"type": "point",
+					"color": [
+						0.208636865,
+						1,
+						0.242281124
+					],
+					"intensity": 10000,
+					"range": 17.5011158
+				},
+				{
+					"name": "PointLight42",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 800,
+					"range": 12
+				},
+				{
+					"name": "PointLight43",
+					"type": "point",
+					"color": [
+						0.258182853,
+						0.723055124,
+						0.533276379
+					],
+					"intensity": 100,
+					"range": 10
+				},
+				{
+					"name": "PointLight44",
+					"type": "point",
+					"color": [
+						0.0295568332,
+						0.947306514,
+						0.401977777
+					],
+					"intensity": 200000,
+					"range": 20
+				},
+				{
+					"name": "PointLight45",
+					"type": "point",
+					"color": [
+						0.450785786,
+						0.913098633,
+						0.921581864
+					],
+					"intensity": 20,
+					"range": 20
+				},
+				{
+					"name": "PointLight46",
+					"type": "point",
+					"color": [
+						0,
+						0.300543785,
+						0.904661179
+					],
+					"intensity": 1000,
+					"range": 16
+				},
+				{
+					"name": "PointLight47",
+					"type": "point",
+					"color": [
+						0.287440836,
+						0.904661179,
+						0.50888133
+					],
+					"intensity": 100,
+					"range": 16
+				},
+				{
+					"name": "PointLight48",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 200,
+					"range": 30
+				},
+				{
+					"name": "PointLight49",
+					"type": "point",
+					"color": [
+						0.097587347,
+						0.309468925,
+						0.603827357
+					],
+					"intensity": 500,
+					"range": 8
+				},
+				{
+					"name": "PointLight50",
+					"type": "point",
+					"color": [
+						0.283148736,
+						0.527115107,
+						0.921581864
+					],
+					"intensity": 50,
+					"range": 20
+				},
+				{
+					"name": "PointLight51",
+					"type": "point",
+					"color": [
+						0.434153646,
+						0.921581864,
+						0.597201765
+					],
+					"intensity": 8,
+					"range": 20
+				},
+				{
+					"name": "PointLight52",
+					"type": "point",
+					"color": [
+						0.246201321,
+						0.527115107,
+						0.366252601
+					],
+					"intensity": 20,
+					"range": 10
+				},
+				{
+					"name": "PointLight53",
+					"type": "point",
+					"color": [
+						0.356400132,
+						0.577580452,
+						0.904661179
+					],
+					"intensity": 25,
+					"range": 15.5995855
+				}
+			]
+		}
+	},
+	"extensionsUsed": [
+		"KHR_materials_ior",
+		"KHR_lights_punctual"
+	]
+}
