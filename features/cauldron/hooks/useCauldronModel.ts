@@ -31,7 +31,6 @@ export const useCauldronModel = ({
 	// applying materials
 	useEffect(() => {
 		scene.traverse((child) => {
-			console.log(child.name);
 			if (!(child instanceof Mesh)) {
 				return;
 			}
@@ -41,7 +40,6 @@ export const useCauldronModel = ({
 				child.scale.set(0, 0, 0);
 			}
 
-			console.log(child);
 			child.material = raymarchMaterial;
 		});
 	}, [scene, raymarchMaterial]);

@@ -5,7 +5,7 @@ export const FluidRaymarchShader = () =>
 	new ShaderMaterial({
 		uniforms: {
 			uLightPos: { value: new Vector3(0, 2, 0) },
-			uHeightScale: { value: 0.08 },
+			uHeightScale: { value: 0.01 },
 			uShadowSteps: { value: 16.0 },
 			uShadowDensity: { value: 1.5 },
 			uFluidColor: { value: new Color("#d4f1f9") },

@@ -1,60 +1,51 @@
-#pragma include "atlas.glsl";
-
-// utils
-float samplePOM(sampler2D atlas, vec2 uv, float tilesX, float tilesY, float frame) {
-	return smoothstep(0.15, 0.85, sampleDensity(atlas, uv, tilesX, tilesY, frame));
+float sampleHeight(vec2 uv) {
+	return texture2D(uDensityMap, uv).r;
 }
 
-// shader logic
-vec2 POM(
-	sampler2D depthMap,
-	vec2 uv,
-	vec2 displacement,
-	float pivot,
-	float layers,
-	float frame,
-	float tilesX,
-	float tilesY
-) {
-	const int MAX_LAYERS = 64;
-	float layerDepth = 1.0 / layers;
-	vec2 deltaUv = displacement / layers;
+vec2 POM(vec2 uv, vec3 viewDirTS, out float intersectionHeight, float heightScale, float minLayers, float maxLayers) {
+	float viewAngle = clamp(abs(viewDirTS.z), 0.05, 1.0);
+	float numLayers = mix(uPomMaxLayers, uPomMinLayers, viewAngle);
+	float layerDepth = 1.0 / numLayers;
+
+	vec2 deltaUV = viewDirTS.xy * uHeightScale / numLayers;
+
+	vec2 currentUV = uv;
 	float currentLayerDepth = 0.0;
+	float currentHeight = sampleHeight(currentUV);
 
-	vec2 currentUv = uv + pivot * displacement;
-	float currentDepth = samplePOM(depthMap, currentUv, tilesX, tilesY, frame);
+	vec2 previousUV = currentUV;
+	float previousLayerDepth = currentLayerDepth;
+	float previousHeight = currentHeight;
 
-	for (int i = 0; i < MAX_LAYERS; i++) {
-		if (float(i) >= layers) break;
-		if (currentLayerDepth > currentDepth) break;
+	for (int i = 0; i < 64; i++) {
+		if (float(i) >= numLayers) {
+			break;
+		}
 
-		currentUv -= deltaUv;
-		currentDepth = samplePOM(depthMap, currentUv, tilesX, tilesY, frame);
+		previousUV = currentUV;
+		previousLayerDepth = currentLayerDepth;
+		previousHeight = currentHeight;
+		currentUV -= deltaUV;
 		currentLayerDepth += layerDepth;
+
+		if (currentUV.x < 0.0 || currentUV.x > 1.0 || currentUV.y < 0.0 || currentUV.y > 1.0) {
+			break;
+		}
+
+		currentHeight = sampleHeight(currentUV);
+
+		if (currentLayerDepth >= currentHeight) {
+			break;
+		}
 	}
 
-	vec2 prevUv = currentUv + deltaUv;
-	float endDepth = currentDepth - currentLayerDepth;
-	float startDepth = samplePOM(depthMap, prevUv, tilesX, tilesY, frame) - currentLayerDepth + layerDepth;
+	float beforeDifference = previousLayerDepth - previousHeight;
+	float afterDifference = currentLayerDepth - currentHeight;
+	float weight = beforeDifference / (beforeDifference - afterDifference);
 
-	float w = endDepth / (endDepth - startDepth);
+	weight = clamp(weight, 0.0, 1.0);
+	vec2 finalUV = mix(previousUV, currentUV, weight);
+	intersectionHeight = mix(previousHeight, currentHeight, weight);
 
-	return mix(currentUv, prevUv, w);
-}
-
-// applying
-vec2 applyPOM(
-	sampler2D heightMap,
-	vec2 uv,
-	vec3 viewDir,
-	float heightScale,
-	float layers,
-	float frame,
-	float tilesX,
-	float tilesY
-) {
-	vec3 view = transpose(vTBN) * normalize(vViewDir);
-	vec2 displacement = view.xy / max(view.z, 0.1) * heightScale;
-
-	return POM(heightMap, uv, displacement, 0.0, layers, frame, tilesX, tilesY);
+	return finalUV;
 }
