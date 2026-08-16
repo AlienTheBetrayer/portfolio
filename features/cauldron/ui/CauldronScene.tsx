@@ -1,6 +1,5 @@
+import { CauldronModel } from "@/features/cauldron/ui/CauldronModel";
 import { FluidFBOManager } from "@/features/cauldron/ui/FluidFBOManager";
-import { Cauldron } from "@/features/cauldron/ui/models/Cauldron";
-import { FluidRaymarchPlanes } from "@/features/cauldron/ui/models/FluidRaymarchPlanes";
 import { Center } from "@react-three/drei";
 
 export const CauldronScene = () => {
@@ -10,16 +9,9 @@ export const CauldronScene = () => {
 			velocityPath="/textures/dryice_velocity.EXR"
 			fps={24}
 		>
-			{(fboTexture) => (
+			{(texture) => (
 				<Center>
-					{/* <Cauldron />
-					<FluidRaymarchPlanes fboTexture={fboTexture} /> */}
-
-					{/* TEMPORARY DEBUG PREVIEW: Displays FBO directly */}
-					<mesh position={[0, 3, 0]}>
-						<planeGeometry args={[1, 1]} />
-						<meshBasicMaterial map={fboTexture} />
-					</mesh>
+					<CauldronModel texture={texture} />
 				</Center>
 			)}
 		</FluidFBOManager>

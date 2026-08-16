@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable react-hooks/immutability */
 import React, { useRef, useMemo } from "react";
 import { useFrame, createPortal, useLoader } from "@react-three/fiber";
@@ -17,6 +19,7 @@ export function FluidFBOManager({
 	velocityPath: string;
 	fps?: number;
 }) {
+	// texture loading
 	const densityMap = useLoader(EXRLoader, densityPath);
 	const velocityMap = useLoader(EXRLoader, velocityPath);
 
@@ -29,6 +32,7 @@ export function FluidFBOManager({
 	velocityMap.minFilter = THREE.LinearFilter;
 	velocityMap.magFilter = THREE.LinearFilter;
 
+	// texture creation
 	const fbo = useFBO(2048, 1024, {
 		minFilter: THREE.LinearFilter,
 		magFilter: THREE.LinearFilter,
@@ -40,25 +44,18 @@ export function FluidFBOManager({
 		stencilBuffer: false,
 	});
 
+	// camera setup
 	const offscreenScene = useMemo(() => new THREE.Scene(), []);
 	const offscreenCamera = useMemo(() => new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1), []);
 
-	const advectionMaterial = useMemo(() => {
-		const mat = new THREE.ShaderMaterial(FluidAdvectionShader); // FIX: Use Advection shader!
-		mat.uniforms.uDensityMap.value = densityMap;
-		mat.uniforms.uVelocityMap.value = velocityMap;
-		mat.uniforms.uVelocityTexelSize = {
-			value: new THREE.Vector2(1 / 1024, 1 / 512),
-		};
-		mat.uniforms.uDensityTexelSize = {
-			value: new THREE.Vector2(1 / 2048, 1 / 1024),
-		};
-		return mat;
-	}, [densityMap, velocityMap]);
+	// mateirial
+	const advectionMaterial = useMemo(() => FluidAdvectionShader(densityMap, velocityMap), [densityMap, velocityMap]);
 
+	// constants
 	const timeRef = useRef(0);
 	const TOTAL_FRAMES = 32.0;
 
+	// dynamic uniform updating
 	useFrame((state, delta) => {
 		timeRef.current += delta * fps;
 		const currentFrame = timeRef.current % TOTAL_FRAMES;
@@ -76,6 +73,7 @@ export function FluidFBOManager({
 		state.gl.setRenderTarget(null);
 	});
 
+	// jsx
 	return (
 		<>
 			{createPortal(
