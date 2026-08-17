@@ -10,10 +10,8 @@ import { Mesh, DirectionalLight, Texture, TextureEventMap } from "three";
 export const useCauldronModel = ({
 	texture,
 	lightRef,
-	heightScale = 0.08,
-	shadowDensity = 1.5,
 	fluidColor = "#d4f1f9",
-	lightColor = "#ffaa44",
+	lightColor = "#0000ff",
 }: {
 	texture: Texture<unknown, TextureEventMap>;
 	lightRef?: RefObject<DirectionalLight>;
@@ -49,8 +47,6 @@ export const useCauldronModel = ({
 		const uniforms = raymarchMaterial.uniforms;
 
 		uniforms.uDensityMap.value = texture;
-		uniforms.uHeightScale.value = heightScale;
-		uniforms.uShadowDensity.value = shadowDensity;
 		uniforms.uFluidColor.value.set(fluidColor);
 		uniforms.uLightColor.value.set(lightColor);
 

@@ -49,10 +49,7 @@ vec2 parallaxOcclusionMapping(vec2 uv, vec3 viewDirTS, out float intersectionHei
 	vec2 finalUV = mix(previousUV, currentUV, weight);
 	intersectionHeight = mix(previousHeight, currentHeight, weight);
 
-	// Contact occlusion: the more steps it took to hit the surface,
-	// the deeper into a crevice we are — darken it. This is the cue
-	// that actually sells "canyon" instead of "gentle bump."
-	occlusion = 1.0 - stepsTaken / numLayers;
+	occlusion = 1.0 - clamp(intersectionHeight * 2.0, 0.0, 1.0);
 
 	return finalUV;
 }

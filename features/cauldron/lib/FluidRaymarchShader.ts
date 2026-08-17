@@ -6,14 +6,14 @@ export const FluidRaymarchShader = () =>
 		uniforms: {
 			uLightPos: { value: new Vector3(0, 2, 0) },
 			uHeightScale: { value: 0.1 },
-			uShadowSteps: { value: 16.0 },
-			uShadowDensity: { value: 1.5 },
-			uFluidColor: { value: new Color("#d4f1f9") },
-			uLightColor: { value: new Color("#ffaa44") },
+			uShadowSteps: { value: 160.0 },
+			uShadowDensity: { value: 12.5 },
+			uFluidColor: { value: new Color("#0000ff") },
+			uLightColor: { value: new Color("#0000ff") },
 			uPomMinLayers: { value: 32.0 },
-      uPomMaxLayers: { value: 192.0 },
+      uPomMaxLayers: { value: 196.0 },
       uDensityMap: { value: null },
-      uParallaxStrength: { value: 0.4 }
+      uParallaxStrength: { value: 0.5 }
 		},
 		vertexShader: fluidVertexShader,
 		fragmentShader: fluidFragmentShader,

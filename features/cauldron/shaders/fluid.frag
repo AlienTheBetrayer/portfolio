@@ -7,19 +7,8 @@ varying vec3 vWorldTangent;
 uniform mat4 projectionMatrix;
 
 #pragma include "parallax.glsl";
-
-vec3 computeNormalFromHeight(vec2 uv, float texelSize) {
-	float hL = sampleHeight(uv - vec2(texelSize, 0.0));
-	float hR = sampleHeight(uv + vec2(texelSize, 0.0));
-	float hD = sampleHeight(uv - vec2(0.0, texelSize));
-	float hU = sampleHeight(uv + vec2(0.0, texelSize));
-
-	// Slope-derived tangent-space normal. uHeightScale controls how
-	// pronounced the bump is — this is a completely separate knob
-	// from the POM UV-offset scale, even though it reads the same map.
-	vec3 tangentNormal = normalize(vec3((hL - hR) * uHeightScale * 4.0, (hD - hU) * uHeightScale * 4.0, 1.0));
-	return tangentNormal;
-}
+#pragma include "raymarch.glsl";
+#pragma include "utils.glsl";
 
 void main() {
 	vec3 N = normalize(vWorldNormal);
@@ -38,24 +27,27 @@ void main() {
 		discard;
 	}
 
-	// Slope-derived bump normal, transformed out of tangent space.
-	vec3 tangentNormal = computeNormalFromHeight(displacedUV, 1.0 / 2048.0);
+	vec3 tangentNormal = computeNormalFromHeight(displacedUV, 1.0 / 2048.0, uHeightScale);
 	vec3 bumpedNormal = normalize(tangentNormal.x * T + tangentNormal.y * B + tangentNormal.z * N);
 
-	// Placeholder single light until the raymarch self-shadow pass exists.
-	vec3 fakeLightDir = normalize(vec3(0.4, 0.6, 0.7));
-	float diffuse = max(dot(bumpedNormal, fakeLightDir), 0.0);
+	// Point light direction: LightPos - MeshPos, per FluidNinja's approach,
+	// projected into the same tangent space as the POM/light march.
+	vec3 offsetWorldPos = vWorldPosition - N * intersectionHeight * uHeightScale;
+	vec3 worldLightDir = normalize(uLightPos - offsetWorldPos);
+	vec3 lightDirTS = normalize(vec3(dot(worldLightDir, T), dot(worldLightDir, B), dot(worldLightDir, N)));
+
+	float diffuse = max(dot(bumpedNormal, worldLightDir), 0.0);
 	float rim = pow(1.0 - max(dot(bumpedNormal, worldViewDir), 0.0), 2.0);
 
-	vec3 finalColor = uFluidColor * (0.2 + diffuse * 0.6) + rim * 0.15;
+	// Beer-Lambert self-shadow/transmittance pass.
+	float lightTransmittance = raymarchLightTransmittance(displacedUV, lightDirTS, intersectionHeight);
 
-	// Contact darkening from POM step count — deeper crevices go darker.
+	vec3 finalColor = uFluidColor * (0.2 + diffuse * 0.6 * lightTransmittance) + rim * 0.15;
+	finalColor += uLightColor * lightTransmittance * 0.3; // internal illumination bleed-through on thin regions
 	finalColor *= mix(0.4, 1.0, occlusion);
 
-	// World-space depth extrusion, independent of the UV-bounded POM ceiling.
-	vec3 offsetWorldPos = vWorldPosition - N * intersectionHeight * uHeightScale;
 	vec4 offsetClip = projectionMatrix * viewMatrix * vec4(offsetWorldPos, 1.0);
-	gl_FragDepth = (offsetClip.z / offsetClip.w) * 0.5 + 0.5;
+	gl_FragDepth = offsetClip.z / offsetClip.w * 0.5 + 0.5;
 
 	gl_FragColor = vec4(finalColor, density);
 }
