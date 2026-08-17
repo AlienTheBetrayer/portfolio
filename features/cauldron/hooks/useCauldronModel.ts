@@ -14,7 +14,7 @@ export const useCauldronModel = ({
 	lightColor = "#0000ff",
 }: {
 	texture: Texture<unknown, TextureEventMap>;
-	lightRef?: RefObject<DirectionalLight>;
+	lightRef?: RefObject<DirectionalLight | null>;
 	heightScale?: number;
 	shadowDensity?: number;
 	fluidColor?: string;
@@ -36,6 +36,7 @@ export const useCauldronModel = ({
 			if (!child.name.includes("BakedFluid")) {
 				// DEBUG: (Hide cauldron)
 				child.scale.set(0, 0, 0);
+				return;
 			}
 
 			child.material = raymarchMaterial;
@@ -43,16 +44,24 @@ export const useCauldronModel = ({
 	}, [scene, raymarchMaterial]);
 
 	// dynamic uniforms
-	useFrame(() => {
+  useFrame((state) => {
+    // init
+    const elapsedTime = state.clock.getElapsedTime();
+
+		// unfiforms
 		const uniforms = raymarchMaterial.uniforms;
 
 		uniforms.uDensityMap.value = texture;
 		uniforms.uFluidColor.value.set(fluidColor);
 		uniforms.uLightColor.value.set(lightColor);
 
-		if (lightRef?.current) {
-			uniforms.uLightPos.value.copy(lightRef.current.position);
+		// lighting
+		if (!lightRef?.current) {
+			return;
 		}
+
+    lightRef.current.position.set(Math.sin(elapsedTime) * 50, 2, Math.cos(elapsedTime) * 50);
+		uniforms.uLightPos.value.copy(lightRef.current.position);
 	});
 
 	return useMemo(() => ({ scene }), [scene]);
