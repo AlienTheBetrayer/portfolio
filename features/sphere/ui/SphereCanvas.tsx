@@ -4,10 +4,11 @@ import { Spheres } from "@/features/sphere/ui/Spheres";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
+import { Vector3 } from "three";
 
 export const SphereCanvas = () => {
 	return (
-		<Canvas camera={{ position: [0, 0.8, 4.5], fov: 45 }}>
+		<Canvas camera={{ position: new Vector3(0, 6, 0), fov: 45 }}>
 			<color
 				attach="background"
 				args={["#020204"]}
