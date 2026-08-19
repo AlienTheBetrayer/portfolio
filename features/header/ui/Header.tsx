@@ -27,18 +27,6 @@ export const Header = () => {
 						</Button>
 					</li>
 
-					<li>
-						<Button variant="ghost">
-							<span className="text-xs">Section 1</span>
-						</Button>
-					</li>
-
-					<li>
-						<Button variant="ghost">
-							<span className="text-xs">Section 1</span>
-						</Button>
-					</li>
-
 					<li className="ml-auto">
 						<ThemeButton />
 					</li>
