@@ -1,5 +1,6 @@
 "use client";
 
+import { OrbitingCrystals } from "@/features/sphere/ui/Crystals";
 import { Spheres } from "@/features/sphere/ui/Spheres";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -12,8 +13,10 @@ export const SphereCanvas = () => {
 			<color
 				attach="background"
 				args={["#020204"]}
-			/>
+      />
+      <pointLight intensity={128} color="#5440c9"/>
 
+      <OrbitingCrystals/>
 			<Spheres />
 
 			<EffectComposer>
